@@ -40,6 +40,22 @@ header {
   header .icono {
     max-width: 5vw; }
 
+footer {
+  margin-top: 3vh;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: space-between; }
+  footer h4, footer h5 {
+    color: #faf6e7;
+    margin-left: 3vw;
+    margin-top: 2vh; }
+  footer .redes {
+    margin-right: 1vw; }
+    footer .redes h5 {
+      margin-left: 0; }
+    footer .redes img {
+      max-width: 3vw; }
+
 .encabezadoIndex {
   width: 100%;
   display: flex;
@@ -77,22 +93,28 @@ header {
 .mainMenu {
   width: 95%;
   margin: auto; }
-  .mainMenu .mainLibros {
+  .mainMenu .mainLibros, .mainMenu .mainColeccionables, .mainMenu .mainGry, .mainMenu .mainHuf, .mainMenu .mainRav, .mainMenu .mainSly {
     margin-top: 3vh;
     width: 100%;
     display: flex;
-    background: black;
-    background: linear-gradient(160deg, black 35%, #436e7d 90%);
-    opacity: 0.95;
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.7) 35%, rgba(67, 110, 125, 0.7) 90%);
     justify-content: space-between;
     align-items: center;
     color: #faf6e7;
     text-decoration: none; }
-    .mainMenu .mainLibros h2 {
+    .mainMenu .mainLibros h2, .mainMenu .mainColeccionables h2, .mainMenu .mainGry h2, .mainMenu .mainHuf h2, .mainMenu .mainRav h2, .mainMenu .mainSly h2 {
       font-size: 3rem;
       padding-left: 3vw; }
-    .mainMenu .mainLibros img {
+    .mainMenu .mainLibros img, .mainMenu .mainColeccionables img, .mainMenu .mainGry img, .mainMenu .mainHuf img, .mainMenu .mainRav img, .mainMenu .mainSly img {
       max-width: 10%;
       padding-top: 2vh;
       padding-bottom: 2vh;
       padding-right: 2vw; }
+  .mainMenu .mainGry {
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.7) 20%, rgba(154, 28, 31, 0.9) 95%); }
+  .mainMenu .mainHuf {
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.7) 20%, rgba(242, 193, 54, 0.9) 95%); }
+  .mainMenu .mainRav {
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.7) 20%, rgba(18, 29, 62, 0.9) 95%); }
+  .mainMenu .mainSly {
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.7) 20%, rgba(23, 117, 83, 0.9) 95%); }
