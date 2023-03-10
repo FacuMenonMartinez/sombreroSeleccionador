@@ -183,3 +183,111 @@ footer {
     background-color: #1b1b1b;
     color: #faf6e7;
     box-shadow: 0px 0px 2px #faf6e7; }
+
+.encabezadoCol {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(27, 27, 27, 0.6); }
+  .encabezadoCol h1 {
+    font-size: 4rem;
+    text-align: center; }
+  .encabezadoCol p {
+    margin-left: 1vw;
+    font-size: 2.5rem; }
+  .encabezadoCol img {
+    max-width: 50%;
+    padding: 1vw; }
+
+.productos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  overflow: hidden; }
+
+.formProductos {
+  background-color: #1b1b1b;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  max-width: 15%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #faf6e7;
+  padding: 3vh; }
+  .formProductos .busqueda {
+    background-color: #363636;
+    max-width: 100%;
+    color: #faf6e7;
+    padding: 0.5vw;
+    margin-bottom: 3vh;
+    border-radius: 12vh;
+    border: 1px solid black; }
+  .formProductos .busqueda::placeholder {
+    color: #faf6e7; }
+  .formProductos .busqueda:focus {
+    box-shadow: none;
+    border: none; }
+  .formProductos select {
+    background-color: #363636;
+    margin-bottom: 3vh;
+    border: 1px solid black; }
+    .formProductos select option {
+      color: #faf6e7; }
+  .formProductos .check {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh; }
+  .formProductos .precio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    align-items: center; }
+  .formProductos .inputPrecio {
+    max-width: 100%;
+    background-color: #363636; }
+  .formProductos .botonPrecio {
+    width: 50%;
+    margin-left: 25%; }
+
+.grillaProductos {
+  background-color: #1b1b1b;
+  max-width: 83%;
+  margin-right: 1vw;
+  margin-top: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+h2 {
+  width: 100%;
+  padding-left: 1vw;
+  padding-top: 1vh; }
+
+.cromo {
+  box-shadow: 0px 0px 10px black;
+  width: 20%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 1vw 2vh 1vw; }
+  .cromo h3 {
+    padding-top: 0.5vh; }
+  .cromo img {
+    max-width: 95%;
+    margin-bottom: 0.5vw; }
+  .cromo p {
+    width: 95%;
+    min-height: 27vh;
+    margin: auto;
+    margin-bottom: 1vh;
+    font-size: 1.2rem;
+    transition: height 2s; }
+  .cromo .boton {
+    background-color: #faf6e7;
+    color: #1b1b1b;
+    width: 7.5vw;
+    border: none;
+    border-radius: 1vh;
+    box-shadow: 1px 1px 10px black;
+    margin-bottom: 1vh; }
