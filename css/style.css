@@ -568,3 +568,73 @@ h2 {
 
 .liRavenclaw {
   color: #e6edea; }
+
+.eSlytherin {
+  background-color: rgba(21, 48, 42, 0.6);
+  min-height: 80vh; }
+  .eSlytherin div {
+    max-width: 65%; }
+  .eSlytherin h1 {
+    color: #e2e3e4;
+    margin-bottom: 2vh; }
+  .eSlytherin p {
+    margin-top: 5vh; }
+  .eSlytherin i {
+    color: #e2e3e4; }
+
+.preSlytherin {
+  background-color: rgba(21, 48, 42, 0.9);
+  max-height: 80vh; }
+  .preSlytherin p {
+    color: #e2e3e4;
+    max-width: 65%;
+    padding-right: 0.5vw; }
+  .preSlytherin img {
+    max-height: 90vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh; }
+
+.fSlytherin {
+  background-color: rgba(21, 48, 42, 0.9); }
+  .fSlytherin h3 {
+    color: #e2e3e4;
+    text-shadow: 0px 0px 15px #177553; }
+  .fSlytherin p {
+    color: #e2e3e4; }
+
+.scSlytherin {
+  background-color: rgba(21, 48, 42, 0.9);
+  color: #e2e3e4; }
+  .scSlytherin p {
+    max-width: 90vw; }
+
+.curiosidades .rSlytherin {
+  background-color: rgba(21, 48, 42, 0.9);
+  display: inline-block; }
+  .curiosidades .rSlytherin .imgGuardapelo {
+    float: right;
+    margin-top: 9vh;
+    margin-right: 2vw; }
+  .curiosidades .rSlytherin p {
+    max-width: 98%; }
+
+.famSlytherin {
+  background-color: rgba(21, 48, 42, 0.9); }
+  .famSlytherin p {
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: 500; }
+
+.cSlytherin {
+  margin: 0;
+  background-color: rgba(21, 48, 42, 0.9);
+  color: #e2e3e4; }
+
+.h4Slytherin {
+  color: #e2e3e4; }
+
+.pSlytherin {
+  color: #e2e3e4; }
+
+.liSlytherin {
+  color: #e2e3e4; }
