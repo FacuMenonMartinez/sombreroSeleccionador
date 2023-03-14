@@ -72,6 +72,108 @@ footer {
   footer .wizarding:hover {
     box-shadow: none; }
 
+.encabezadoCasas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh; }
+  .encabezadoCasas div {
+    width: 50%; }
+  .encabezadoCasas h1 {
+    font-size: 4rem;
+    text-align: center; }
+  .encabezadoCasas p {
+    margin-left: 3vw;
+    font-size: 3rem; }
+  .encabezadoCasas img {
+    max-height: 80vh;
+    margin-right: 1vw; }
+
+.presentacion {
+  max-width: 98%;
+  max-height: 70vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; }
+  .presentacion p {
+    font-size: 3rem;
+    max-width: 45vw;
+    margin-left: 2vw; }
+  .presentacion img {
+    max-width: 40vw;
+    margin-right: 1vw; }
+
+.fundador {
+  max-width: 98%;
+  margin: auto;
+  margin-top: 2vh;
+  display: flex; }
+  .fundador img {
+    box-shadow: 0.5px 0.5px 20px black;
+    float: right;
+    padding: 1vw;
+    margin-top: 9vh;
+    margin-left: 1vw;
+    margin-right: 1vw; }
+  .fundador h3 {
+    padding-left: 3vw;
+    font-size: 3rem; }
+  .fundador p {
+    padding-left: 3vw;
+    padding-right: 1vw;
+    font-size: 1.5rem; }
+
+.curiosidades {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: auto;
+  margin-top: 2vh; }
+  .curiosidades .salaComun {
+    margin-bottom: 2vh;
+    padding: 1vh 1vw 0 1vw; }
+  .curiosidades .reliquia {
+    display: flex;
+    margin-bottom: 2vh; }
+    .curiosidades .reliquia img {
+      max-height: 50vh;
+      margin: 1vw;
+      box-shadow: 0.5px 0.5px 20px black; }
+  .curiosidades .famosos {
+    display: flex;
+    justify-content: space-around; }
+    .curiosidades .famosos .ulFamosos {
+      width: 65%;
+      box-shadow: none; }
+    .curiosidades .famosos div {
+      width: 30vw;
+      padding: 1vw 1vh 1vw 1vh;
+      margin: 1vw;
+      box-shadow: 0.5px 0.5px 20px black; }
+      .curiosidades .famosos div img {
+        max-width: 98%;
+        padding-left: 1.5vw;
+        padding-right: 1vw;
+        margin-top: 2vh; }
+      .curiosidades .famosos div p {
+        font-size: 1rem;
+        padding: 0; }
+  .curiosidades h3 {
+    margin: 0;
+    padding-left: 3vw;
+    font-size: 3rem; }
+  .curiosidades h4 {
+    padding-left: 1vw;
+    font-size: 2rem; }
+  .curiosidades p {
+    font-size: 1.5rem;
+    padding-left: 1vw; }
+  .curiosidades li {
+    font-size: 1.5rem;
+    padding-left: 1vw;
+    list-style: none; }
+
 body::-webkit-scrollbar {
   width: 7px;
   background-color: #1b1b1b; }
@@ -301,126 +403,105 @@ h2 {
     box-shadow: 1px 1px 10px black;
     margin-bottom: 1vh; }
 
-.gryffindor {
+.eGryffindor {
   background-color: rgba(116, 0, 1, 0.5); }
+  .eGryffindor h1 {
+    color: #dcaf3a; }
+  .eGryffindor i {
+    color: #dcaf3a; }
 
-.encabezadoGryffindor {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(116, 0, 1, 0.5);
-  margin-bottom: 2vh; }
-  .encabezadoGryffindor div {
-    width: 50%; }
-  .encabezadoGryffindor h1 {
-    font-size: 4rem;
+.preGryffindor {
+  background-color: rgba(116, 0, 1, 0.7); }
+  .preGryffindor p {
+    color: #dcaf3a; }
+
+.fGryffindor {
+  background-color: rgba(116, 0, 1, 0.4); }
+  .fGryffindor h3 {
+    color: #dcaf3a;
+    text-shadow: 0px 0px 30px #f7ee23; }
+  .fGryffindor p {
+    color: #dcaf3a; }
+
+.scGryffindor {
+  background-color: rgba(116, 0, 1, 0.4);
+  color: #dcaf3a; }
+
+.rGryffindor {
+  background-color: rgba(116, 0, 1, 0.4); }
+
+.famGryffindor {
+  background-color: rgba(116, 0, 1, 0.4); }
+
+.cGryffindor {
+  margin: 0;
+  background-color: rgba(116, 0, 1, 0.4);
+  color: #dcaf3a;
+  padding-left: 3vw;
+  font-size: 3rem; }
+
+.h4Gryffindor {
+  color: #dcaf3a; }
+
+.pGryffindor {
+  color: #dcaf3a; }
+
+.liGryffindor {
+  color: #dcaf3a; }
+
+.eHufflepuff {
+  background-color: rgba(242, 193, 54, 0.7); }
+  .eHufflepuff h1 {
+    color: #131a1c; }
+  .eHufflepuff i {
+    color: #2c1f10; }
+
+.preHufflepuff {
+  background-color: rgba(242, 193, 54, 0.8);
+  max-height: 80vh; }
+  .preHufflepuff p {
+    color: #2c1f10; }
+  .preHufflepuff img {
+    max-height: 90vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh; }
+
+.fHUfflepuff {
+  background-color: rgba(242, 193, 54, 0.8); }
+  .fHUfflepuff h3 {
+    color: #131a1c;
+    text-shadow: 0px 0px 25px #2c1f10; }
+  .fHUfflepuff p {
+    color: #2c1f10; }
+
+.scHufflepuff {
+  background-color: rgba(242, 193, 54, 0.8);
+  color: #2c1f10; }
+  .scHufflepuff p {
+    max-width: 90vw; }
+
+.rHufflepuff {
+  background-color: rgba(242, 193, 54, 0.8); }
+
+.famHufflepuff {
+  background-color: rgba(242, 193, 54, 0.8); }
+  .famHufflepuff p {
+    margin-top: 1vh;
     text-align: center;
-    color: #dcaf3a; }
-  .encabezadoGryffindor p {
-    margin-left: 3vw;
-    font-size: 3rem; }
-  .encabezadoGryffindor i {
-    color: #dcaf3a; }
-  .encabezadoGryffindor img {
-    max-height: 80vh;
-    margin-right: 1vw; }
+    font-weight: 500; }
 
-.presentacion {
-  max-width: 98%;
-  max-height: 70vh;
-  margin: auto;
-  background-color: rgba(116, 0, 1, 0.4);
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden; }
-  .presentacion p {
-    color: #dcaf3a;
-    font-size: 3rem;
-    max-width: 45vw;
-    margin-left: 2vw; }
-  .presentacion img {
-    max-width: 40vw;
-    margin-right: 1vw; }
+.cHufflepuff {
+  margin: 0;
+  background-color: rgba(242, 193, 54, 0.8);
+  color: #2c1f10;
+  padding-left: 3vw;
+  font-size: 3rem; }
 
-.fundador {
-  background-color: rgba(116, 0, 1, 0.4);
-  max-width: 98%;
-  margin: auto;
-  margin-top: 2vh;
-  display: flex; }
-  .fundador img {
-    box-shadow: 0.5px 0.5px 20px black;
-    float: right;
-    padding: 1vw;
-    margin-top: 9vh;
-    margin-left: 1vw;
-    margin-right: 1vw; }
-  .fundador h3 {
-    color: #dcaf3a;
-    text-shadow: 0px 0px 30px #f7ee23;
-    padding-left: 3vw;
-    font-size: 3rem; }
-  .fundador p {
-    color: #dcaf3a;
-    padding-left: 3vw;
-    padding-right: 1vw;
-    font-size: 1.5rem; }
+.h4Hufflepuff {
+  color: #2c1f10; }
 
-.curiosidades {
-  display: flex;
-  flex-direction: column;
-  width: 98%;
-  margin: auto;
-  margin-top: 2vh; }
-  .curiosidades .salaComun {
-    background-color: rgba(116, 0, 1, 0.4);
-    color: #dcaf3a;
-    margin-bottom: 2vh;
-    padding: 1vh 1vw 0 1vw; }
-  .curiosidades .espada {
-    display: flex;
-    background-color: rgba(116, 0, 1, 0.4);
-    margin-bottom: 2vh; }
-    .curiosidades .espada img {
-      max-height: 50vh;
-      margin: 1vw;
-      box-shadow: 0.5px 0.5px 20px black; }
-  .curiosidades .famosos {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(116, 0, 1, 0.4); }
-    .curiosidades .famosos .ulFamosos {
-      width: 65%;
-      box-shadow: none; }
-    .curiosidades .famosos div {
-      width: 30vw;
-      padding: 1vw 1vh 1vw 1vh;
-      margin: 1vw;
-      box-shadow: 0.5px 0.5px 20px black; }
-      .curiosidades .famosos div .nic {
-        max-width: 98%;
-        padding-left: 1.5vw;
-        padding-right: 1vw;
-        margin-top: 2vh; }
-      .curiosidades .famosos div p {
-        font-size: 1rem;
-        padding: 0; }
-  .curiosidades h4 {
-    color: #dcaf3a;
-    padding-left: 1vw;
-    font-size: 2rem; }
-  .curiosidades h3 {
-    margin: 0;
-    background-color: rgba(116, 0, 1, 0.4);
-    color: #dcaf3a;
-    padding-left: 3vw;
-    font-size: 3rem; }
-  .curiosidades p {
-    font-size: 1.5rem;
-    color: #dcaf3a;
-    padding-left: 1vw; }
-  .curiosidades li {
-    font-size: 1.5rem;
-    color: #dcaf3a;
-    padding-left: 1vw;
-    list-style: none; }
+.pHufflepuff {
+  color: #2c1f10; }
+
+.liHufflepuff {
+  color: #2c1f10; }
