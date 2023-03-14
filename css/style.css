@@ -78,11 +78,12 @@ footer {
   justify-content: space-between;
   margin-bottom: 2vh; }
   .encabezadoCasas div {
-    width: 50%; }
+    max-width: 50%; }
   .encabezadoCasas h1 {
     font-size: 4rem;
     text-align: center; }
   .encabezadoCasas p {
+    padding-right: 0.5vw;
     margin-left: 3vw;
     font-size: 3rem; }
   .encabezadoCasas img {
@@ -122,7 +123,8 @@ footer {
   .fundador p {
     padding-left: 3vw;
     padding-right: 1vw;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    max-width: 95%; }
 
 .curiosidades {
   display: flex;
@@ -505,3 +507,64 @@ h2 {
 
 .liHufflepuff {
   color: #2c1f10; }
+
+.eRavenclaw {
+  background-color: rgba(45, 58, 101, 0.5); }
+  .eRavenclaw div {
+    max-width: 65%; }
+  .eRavenclaw h1 {
+    color: #e6edea; }
+  .eRavenclaw i {
+    color: #e6edea; }
+
+.preRavenclaw {
+  background-color: rgba(45, 58, 101, 0.9);
+  max-height: 90vh; }
+  .preRavenclaw p {
+    color: #e6edea;
+    max-width: 65%;
+    padding-right: 0.5vw; }
+  .preRavenclaw img {
+    max-height: 90vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh; }
+
+.fRavenclaw {
+  background-color: rgba(45, 58, 101, 0.9); }
+  .fRavenclaw h3 {
+    color: #e6edea;
+    text-shadow: 0px 0px 30px #e6edea; }
+  .fRavenclaw p {
+    color: #e6edea; }
+
+.scRavenclaw {
+  background-color: rgba(45, 58, 101, 0.9);
+  color: #e6edea; }
+  .scRavenclaw p {
+    max-width: 90vw; }
+
+.rRavenclaw {
+  background-color: rgba(45, 58, 101, 0.9); }
+
+.famRavenclaw {
+  background-color: rgba(45, 58, 101, 0.9); }
+  .famRavenclaw p {
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: 500; }
+
+.cRavenclaw {
+  margin: 0;
+  background-color: rgba(45, 58, 101, 0.9);
+  color: #e6edea;
+  padding-left: 3vw;
+  font-size: 3rem; }
+
+.h4Ravenclaw {
+  color: #e6edea; }
+
+.pRavenclaw {
+  color: #e6edea; }
+
+.liRavenclaw {
+  color: #e6edea; }
