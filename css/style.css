@@ -52,13 +52,39 @@ footer {
   footer .footerizq {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
-    footer .footerizq h4, footer .footerizq h5 {
+    justify-content: space-around;
+    width: 35vw; }
+    footer .footerizq h4,
+    footer .footerizq h5 {
       color: #faf6e7;
       margin-left: 3vw;
       margin-top: 2vh; }
+  footer form {
+    display: flex;
+    margin-top: 2vh;
+    width: 35vw; }
+    footer form span {
+      font-size: 1.5rem;
+      margin-right: 1vw; }
+    footer form .email {
+      width: 25vw;
+      max-height: 6vh;
+      margin-right: 1vw;
+      color: black;
+      font-weight: 500;
+      outline: none;
+      border: none;
+      box-shadow: 0px 0px 10px black;
+      padding-left: 0.5vw; }
+    footer form .boton {
+      max-height: 6vh;
+      width: 7vw;
+      color: black;
+      font-weight: 500;
+      padding: 0 0.5vw 0 0.5vw; }
   footer .redes {
-    margin-right: 1vw; }
+    margin-right: 1vw;
+    width: 10vw; }
     footer .redes h5 {
       margin-left: 0; }
   footer .imgRedes {
