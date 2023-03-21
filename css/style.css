@@ -162,6 +162,8 @@ footer {
   .curiosidades .salaComun {
     margin-bottom: 2vh;
     padding: 1vh 1vw 0 1vw; }
+    .curiosidades .salaComun p {
+      max-width: 98%; }
   .curiosidades .reliquia {
     display: flex;
     margin-bottom: 2vh; }
@@ -212,35 +214,39 @@ body::-webkit-scrollbar-thumb {
   background-color: #363636;
   border-radius: 3vh; }
 
+@media (max-width: 1024px) {
+  .presentacion {
+    max-height: 80vh; }
+    .presentacion p {
+      font-size: 2.5rem; } }
+
 @media (max-width: 991px) {
   header .navbar .container-fluid {
     justify-content: space-between; }
   .bg-dark {
     --bs-bg-opacity: 0.8; }
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); } }
-
-footer .footerizq {
-  width: 45vw; }
-  footer .footerizq h4, footer .footerizq h5 {
-    font-size: 1rem;
-    margin-left: 1vw; }
-
-footer form {
-  flex-direction: column;
-  align-items: center;
-  width: 40vw; }
-  footer form span {
-    font-size: 1.2rem;
-    margin-right: 0; }
-  footer form .email {
-    width: 30vw;
-    height: 4vh;
-    text-align: center;
-    margin-top: 1vh; }
-  footer form .boton {
-    margin-top: 1vh;
-    margin-bottom: 1vh; }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  footer .footerizq {
+    width: 45vw; }
+    footer .footerizq h4, footer .footerizq h5 {
+      font-size: 1rem;
+      margin-left: 1vw; }
+  footer form {
+    flex-direction: column;
+    align-items: center;
+    width: 40vw; }
+    footer form span {
+      font-size: 1.2rem;
+      margin-right: 0; }
+    footer form .email {
+      width: 30vw;
+      height: 4vh;
+      text-align: center;
+      margin-top: 1vh; }
+    footer form .boton {
+      margin-top: 1vh;
+      margin-bottom: 1vh; } }
 
 .encabezadoIndex {
   width: 100%;
@@ -305,6 +311,14 @@ footer form {
   .mainMenu .mainSly {
     background: linear-gradient(160deg, rgba(0, 0, 0, 0.7) 20%, rgba(23, 117, 83, 0.9) 95%); }
 
+@media (max-width: 1024px) {
+  .encabezadoIndex h1 {
+    font-size: 5rem; }
+  .bienvenida p {
+    max-width: 65%; }
+  .bienvenida img {
+    max-width: 49vh; } }
+
 .encabezadoLibros {
   width: 100%;
   display: flex;
@@ -353,6 +367,14 @@ footer form {
     background-color: #1b1b1b;
     color: #faf6e7;
     box-shadow: 0px 0px 2px #faf6e7; }
+
+@media (max-width: 1024px) {
+  .encabezadoLibros h1 {
+    font-size: 3rem; }
+  .encabezadoLibros img {
+    max-width: 65vh; }
+  .reseñaLibros h2 {
+    font-size: 2.5rem; } }
 
 .encabezadoCol {
   max-width: 100%;
@@ -462,6 +484,19 @@ h2 {
     box-shadow: 1px 1px 10px black;
     margin-bottom: 1vh; }
 
+@media (max-width: 1024px) {
+  .formProductos {
+    max-width: 20%; }
+  .cromo {
+    width: 21%; }
+    .cromo h3 {
+      font-size: 1.3rem; }
+    .cromo p {
+      margin-top: 0;
+      min-height: 35vh; }
+    .cromo .boton {
+      width: 10vw; } }
+
 .eGryffindor {
   background-color: rgba(116, 0, 1, 0.5); }
   .eGryffindor h1 {
@@ -472,7 +507,13 @@ h2 {
 .preGryffindor {
   background-color: rgba(116, 0, 1, 0.7); }
   .preGryffindor p {
-    color: #dcaf3a; }
+    color: #dcaf3a;
+    max-width: 60%;
+    padding-right: 0.5vw; }
+  .preGryffindor img {
+    max-height: 90vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh; }
 
 .fGryffindor {
   background-color: rgba(116, 0, 1, 0.4); }
@@ -491,6 +532,10 @@ h2 {
 
 .famGryffindor {
   background-color: rgba(116, 0, 1, 0.4); }
+  .famGryffindor p {
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: 500; }
 
 .cGryffindor {
   margin: 0;
@@ -508,18 +553,26 @@ h2 {
 .liGryffindor {
   color: #dcaf3a; }
 
+@media (max-width: 1024px) {
+  .preGryffindor img {
+    max-height: 65vh; } }
+
 .eHufflepuff {
   background-color: rgba(242, 193, 54, 0.7); }
   .eHufflepuff h1 {
     color: #131a1c; }
   .eHufflepuff i {
     color: #2c1f10; }
+  .eHufflepuff img {
+    max-height: 70vh; }
 
 .preHufflepuff {
   background-color: rgba(242, 193, 54, 0.8);
   max-height: 80vh; }
   .preHufflepuff p {
-    color: #2c1f10; }
+    max-width: 55%;
+    color: #2c1f10;
+    font-weight: 500; }
   .preHufflepuff img {
     max-height: 90vh;
     margin-top: 1vh;
@@ -531,13 +584,15 @@ h2 {
     color: #131a1c;
     text-shadow: 0px 0px 25px #2c1f10; }
   .fHUfflepuff p {
-    color: #2c1f10; }
+    color: #2c1f10;
+    font-weight: 500; }
 
 .scHufflepuff {
   background-color: rgba(242, 193, 54, 0.8);
   color: #2c1f10; }
   .scHufflepuff p {
-    max-width: 90vw; }
+    max-width: 90vw;
+    font-weight: 500; }
 
 .rHufflepuff {
   background-color: rgba(242, 193, 54, 0.8); }
@@ -625,6 +680,15 @@ h2 {
 
 .liRavenclaw {
   color: #e6edea; }
+
+@media (max-width: 1024px) {
+  .eRavenclaw p {
+    font-size: 2.5rem; }
+  .curiosidades .rRavenclaw p {
+    font-size: 1.3rem; }
+  .curiosidades .rRavenclaw img {
+    max-height: 53vh;
+    margin-top: 4vh; } }
 
 .eSlytherin {
   background-color: rgba(21, 48, 42, 0.6);
