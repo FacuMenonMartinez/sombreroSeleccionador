@@ -328,6 +328,93 @@ body::-webkit-scrollbar-thumb {
   .bienvenida img {
     max-width: 49vh; } }
 
+@media (max-width: 991px) {
+  .encabezadoIndex h1 {
+    font-size: 4.5rem;
+    margin-bottom: -60px; }
+  .encabezadoIndex img {
+    margin-bottom: -60px; }
+  .encabezadoIndex p {
+    font-size: 2.5rem; }
+  .bienvenida img {
+    max-width: 50vh; }
+  .bienvenida p {
+    font-size: 1.7rem; } }
+
+@media (max-width: 855px) {
+  .encabezadoIndex h1 {
+    font-size: 4.5rem;
+    margin-bottom: -50px; }
+  .encabezadoIndex img {
+    max-width: 40vw;
+    margin-bottom: -50px; }
+  .encabezadoIndex p {
+    font-size: 2.0rem; }
+  .bienvenida img {
+    max-width: 45vh; }
+  .bienvenida p {
+    font-size: 1.5rem; } }
+
+@media (max-width: 700px) {
+  .encabezadoIndex h1 {
+    font-size: 4rem;
+    margin-bottom: -40px; }
+  .encabezadoIndex img {
+    max-width: 35vw;
+    margin-bottom: -40px; }
+  .encabezadoIndex p {
+    font-size: 1.5rem; }
+  .bienvenida img {
+    max-width: 45vw; } }
+
+@media (max-width: 610px) {
+  .encabezadoIndex h1 {
+    font-size: 3rem;
+    margin-bottom: -30px; }
+  .encabezadoIndex img {
+    max-width: 35vw;
+    margin-bottom: -30px; }
+  .encabezadoIndex p {
+    font-size: 1.5rem; } }
+
+@media (max-width: 510px) {
+  .encabezadoIndex h1 {
+    font-size: 2.2rem;
+    margin-bottom: -20px; }
+  .encabezadoIndex img {
+    max-width: 35vw;
+    margin-bottom: -20px; }
+  .encabezadoIndex p {
+    font-size: 1.2rem; }
+  .bienvenida img {
+    max-width: 45vw; }
+  .bienvenida p {
+    font-size: 1rem; } }
+
+@media (max-width: 475px) {
+  .encabezadoIndex h1 {
+    font-size: 2rem;
+    margin-bottom: -10px; }
+  .encabezadoIndex img {
+    max-width: 35vw;
+    margin-bottom: -10px; }
+  .encabezadoIndex p {
+    font-size: 1rem; }
+  .bienvenida p {
+    font-size: 0.8rem; } }
+
+@media (max-width: 345px) {
+  .encabezadoIndex h1 {
+    font-size: 1.5rem;
+    margin-bottom: -10px; }
+  .encabezadoIndex img {
+    max-width: 35vw;
+    margin-bottom: -10px; }
+  .encabezadoIndex p {
+    font-size: 0.8rem; }
+  .bienvenida p {
+    font-size: 0.7rem; } }
+
 .encabezadoLibros {
   width: 100%;
   display: flex;
