@@ -20,7 +20,8 @@ header {
     margin-left: 5vw; }
   header .nav-link {
     color: #faf6e7;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin-left: 3vw; }
   header .nav-link:focus {
     color: #faf6e7; }
   header .nav-link:hover {
@@ -214,15 +215,23 @@ body::-webkit-scrollbar-thumb {
   background-color: #363636;
   border-radius: 3vh; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1066px) {
   .presentacion {
     max-height: 80vh; }
     .presentacion p {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem; }
+  footer .footerizq {
+    width: 45vw; } }
 
 @media (max-width: 991px) {
   header .navbar .container-fluid {
     justify-content: space-between; }
+  header .navbar .boton {
+    width: 25%; }
+  header .nav-link {
+    margin-left: 0; }
+  header .navbar-collapse {
+    margin-left: 0; }
   .bg-dark {
     --bs-bg-opacity: 0.8; }
   .navbar-toggler-icon {
@@ -311,7 +320,7 @@ body::-webkit-scrollbar-thumb {
   .mainMenu .mainSly {
     background: linear-gradient(160deg, rgba(0, 0, 0, 0.7) 20%, rgba(23, 117, 83, 0.9) 95%); }
 
-@media (max-width: 1024px) {
+@media (max-width: 1066px) {
   .encabezadoIndex h1 {
     font-size: 5rem; }
   .bienvenida p {
@@ -368,7 +377,7 @@ body::-webkit-scrollbar-thumb {
     color: #faf6e7;
     box-shadow: 0px 0px 2px #faf6e7; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1066px) {
   .encabezadoLibros h1 {
     font-size: 3rem; }
   .encabezadoLibros img {
@@ -484,7 +493,7 @@ h2 {
     box-shadow: 1px 1px 10px black;
     margin-bottom: 1vh; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1066px) {
   .formProductos {
     max-width: 20%; }
   .cromo {
@@ -553,7 +562,7 @@ h2 {
 .liGryffindor {
   color: #dcaf3a; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1066px) {
   .preGryffindor img {
     max-height: 65vh; } }
 
@@ -681,7 +690,7 @@ h2 {
 .liRavenclaw {
   color: #e6edea; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1066px) {
   .eRavenclaw p {
     font-size: 2.5rem; }
   .curiosidades .rRavenclaw p {
