@@ -553,12 +553,35 @@ body::-webkit-scrollbar-thumb {
     font-size: 2rem;
     text-align: center; }
   .reseñaLibros p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding-left: 2vh; }
   .reseñaLibros img {
-    max-height: 90vh; }
-  .libro3 img {
-    margin-top: 8vh; } }
+    max-height: 60vh; } }
+
+@media (max-width: 835px) {
+  .encabezadoLibros h1 {
+    font-size: 2.5rem; }
+  .encabezadoLibros p {
+    font-size: 1.7rem; }
+  .reseñaLibros {
+    align-items: center; }
+    .reseñaLibros p {
+      font-size: 1rem; }
+    .reseñaLibros img {
+      max-height: 60vh; } }
+
+@media (max-width: 725px) {
+  .encabezadoLibros h1 {
+    font-size: 2rem; }
+  .encabezadoLibros p {
+    font-size: 1.5rem; }
+  .reseñaLibros h2 {
+    font-size: 1.5rem; }
+  .reseñaLibros input {
+    background-color: #faf6e7;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 25vh; } }
 
 .encabezadoCol {
   max-width: 100%;
