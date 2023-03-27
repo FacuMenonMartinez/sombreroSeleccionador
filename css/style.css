@@ -255,7 +255,68 @@ body::-webkit-scrollbar-thumb {
       margin-top: 1vh; }
     footer form .boton {
       margin-top: 1vh;
-      margin-bottom: 1vh; } }
+      margin-bottom: 1vh; }
+  footer .redes h5 {
+    font-size: 1rem; } }
+
+@media (max-width: 600px) {
+  header .icono {
+    max-width: 10vw; }
+  footer .footerizq {
+    width: 45vw; }
+    footer .footerizq h4, footer .footerizq h5 {
+      font-size: 0.7rem;
+      margin-left: 1vw; }
+  footer form {
+    flex-direction: column;
+    align-items: center;
+    width: 40vw; }
+    footer form span {
+      font-size: 0.7rem;
+      margin-right: 0; }
+    footer form .email {
+      width: 25vw;
+      height: 4vh;
+      text-align: center;
+      margin-top: 1vh; }
+    footer form .boton {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      font-size: 0.7rem; }
+  footer .redes h5 {
+    font-size: 0.7rem; }
+  footer .redes img {
+    max-width: 2.5vw; } }
+
+@media (max-width: 415px) {
+  header .icono {
+    max-width: 15vw; }
+  footer .footerizq {
+    width: 45vw; }
+    footer .footerizq h4, footer .footerizq h5 {
+      font-size: 0.5rem;
+      margin-left: 1vw; }
+  footer form {
+    flex-direction: column;
+    align-items: center;
+    width: 40vw; }
+    footer form span {
+      font-size: 0.5rem;
+      margin-right: 0; }
+    footer form .email {
+      width: 25vw;
+      height: 4vh;
+      text-align: center;
+      margin-top: 1vh;
+      font-size: 0.5rem; }
+    footer form .boton {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      font-size: 0.5rem; }
+  footer .redes h5 {
+    font-size: 0.5rem; }
+  footer .redes img {
+    max-width: 2.5vw; } }
 
 .encabezadoIndex {
   width: 100%;
@@ -401,7 +462,15 @@ body::-webkit-scrollbar-thumb {
   .encabezadoIndex p {
     font-size: 1rem; }
   .bienvenida p {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .mainMenu .mainLibros h2, .mainMenu .mainColeccionables h2, .mainMenu .mainGry h2, .mainMenu .mainHuf h2, .mainMenu .mainRav h2, .mainMenu .mainSly h2 {
+    font-size: 2rem;
+    padding-left: 2vw; }
+  .mainMenu .mainLibros img, .mainMenu .mainColeccionables img, .mainMenu .mainGry img, .mainMenu .mainHuf img, .mainMenu .mainRav img, .mainMenu .mainSly img {
+    max-width: 10%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1vw; } }
 
 @media (max-width: 345px) {
   .encabezadoIndex h1 {
