@@ -539,7 +539,26 @@ body::-webkit-scrollbar-thumb {
   .encabezadoLibros img {
     max-width: 65vh; }
   .reseñaLibros h2 {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .reseñaLibros img {
+    max-height: 90vh;
+    padding: 2vh; } }
+
+@media (max-width: 930px) {
+  .encabezadoLibros h1 {
+    font-size: 2.5rem; }
+  .encabezadoLibros p {
+    font-size: 2rem; }
+  .reseñaLibros h2 {
+    font-size: 2rem;
+    text-align: center; }
+  .reseñaLibros p {
+    font-size: 1.4rem;
+    padding-left: 2vh; }
+  .reseñaLibros img {
+    max-height: 90vh; }
+  .libro3 img {
+    margin-top: 8vh; } }
 
 .encabezadoCol {
   max-width: 100%;
