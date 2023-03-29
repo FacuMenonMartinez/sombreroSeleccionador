@@ -262,6 +262,14 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 600px) {
   header .icono {
     max-width: 10vw; }
+  .navbar-nav .container-fluid {
+    overflow: hidden; }
+  .navbar-nav .dropdown-menu.show {
+    width: 25vw;
+    min-width: 0; }
+    .navbar-nav .dropdown-menu.show .dropdown-item {
+      padding: 0;
+      padding-left: 1vw; }
   footer .footerizq {
     width: 45vw; }
     footer .footerizq h4, footer .footerizq h5 {
