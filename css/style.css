@@ -296,9 +296,11 @@ body::-webkit-scrollbar-thumb {
   footer .redes img {
     max-width: 2.5vw; } }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   header .icono {
     max-width: 15vw; }
+  header .nav-link {
+    font-size: 1.2rem; }
   footer .footerizq {
     width: 45vw; }
     footer .footerizq h4, footer .footerizq h5 {
@@ -325,6 +327,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 0.5rem; }
   footer .redes img {
     max-width: 2.5vw; } }
+
+@media (max-width: 390px) {
+  .navbar-nav .dropdown-menu.show {
+    width: 26vw; }
+    .navbar-nav .dropdown-menu.show .dropdown-item {
+      padding: 0;
+      padding-left: 1vw;
+      font-size: 0.8rem; } }
 
 .encabezadoIndex {
   width: 100%;
