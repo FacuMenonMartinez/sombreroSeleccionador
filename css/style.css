@@ -522,23 +522,23 @@ body::-webkit-scrollbar-thumb {
   .encabezadoLibros img {
     margin-right: 1vw; }
 
-.reseñaLibros {
+.reseñaLibros, .reseñaLibrosResponsive {
   background-color: #1b1b1b;
   max-width: 98%;
   margin: auto;
   margin-bottom: 2vh;
   display: flex;
   flex-wrap: nowrap; }
-  .reseñaLibros h2 {
+  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
     font-size: 3rem;
     text-align: center; }
-  .reseñaLibros p {
+  .reseñaLibros p, .reseñaLibrosResponsive p {
     font-size: 1.5rem;
     padding-left: 2vh; }
-  .reseñaLibros img {
+  .reseñaLibros img, .reseñaLibrosResponsive img {
     max-height: 70vh;
     padding: 2vh; }
-  .reseñaLibros input {
+  .reseñaLibros input, .reseñaLibrosResponsive input {
     background-color: #faf6e7;
     min-width: 10vw;
     max-height: 7vh;
@@ -549,19 +549,22 @@ body::-webkit-scrollbar-thumb {
     border-radius: 30vh;
     border: none;
     box-shadow: 1px 1px 10px black; }
-  .reseñaLibros input:hover {
+  .reseñaLibros input:hover, .reseñaLibrosResponsive input:hover {
     background-color: #1b1b1b;
     color: #faf6e7;
     box-shadow: 0px 0px 2px #faf6e7; }
+
+.reseñaLibrosResponsive {
+  display: none; }
 
 @media (max-width: 1066px) {
   .encabezadoLibros h1 {
     font-size: 3rem; }
   .encabezadoLibros img {
     max-width: 65vh; }
-  .reseñaLibros h2 {
+  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
     font-size: 2.5rem; }
-  .reseñaLibros img {
+  .reseñaLibros img, .reseñaLibrosResponsive img {
     max-height: 90vh;
     padding: 2vh; } }
 
@@ -570,13 +573,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.5rem; }
   .encabezadoLibros p {
     font-size: 2rem; }
-  .reseñaLibros h2 {
+  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
     font-size: 2rem;
     text-align: center; }
-  .reseñaLibros p {
+  .reseñaLibros p, .reseñaLibrosResponsive p {
     font-size: 1rem;
     padding-left: 2vh; }
-  .reseñaLibros img {
+  .reseñaLibros img, .reseñaLibrosResponsive img {
     max-height: 60vh; } }
 
 @media (max-width: 835px) {
@@ -584,11 +587,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.5rem; }
   .encabezadoLibros p {
     font-size: 1.7rem; }
-  .reseñaLibros {
+  .reseñaLibros, .reseñaLibrosResponsive {
     align-items: center; }
-    .reseñaLibros p {
+    .reseñaLibros p, .reseñaLibrosResponsive p {
       font-size: 1rem; }
-    .reseñaLibros img {
+    .reseñaLibros img, .reseñaLibrosResponsive img {
       max-height: 60vh; } }
 
 @media (max-width: 725px) {
@@ -596,13 +599,89 @@ body::-webkit-scrollbar-thumb {
     font-size: 2rem; }
   .encabezadoLibros p {
     font-size: 1.5rem; }
-  .reseñaLibros h2 {
+  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
     font-size: 1.5rem; }
-  .reseñaLibros input {
+  .reseñaLibros input, .reseñaLibrosResponsive input {
     background-color: #faf6e7;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 25vh; } }
+
+@media (max-width: 576px) {
+  .encabezadoLibros h1 {
+    font-size: 1.8rem; }
+  .encabezadoLibros p {
+    font-size: 1.5rem;
+    margin-bottom: 0; }
+  .encabezadoLibros i {
+    padding-left: 1vw; }
+  .encabezadoLibros img {
+    max-width: 45vw;
+    max-height: 35vw; }
+  .reseñaLibros {
+    display: none; }
+  .reseñaLibrosResponsive {
+    display: flex; }
+    .reseñaLibrosResponsive div {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "titulo" "foto" "descripcion" "boton";
+      justify-items: center; }
+      .reseñaLibrosResponsive div h2 {
+        grid-area: titulo; }
+      .reseñaLibrosResponsive div img {
+        grid-area: foto;
+        max-height: 50vh;
+        padding: 0; }
+      .reseñaLibrosResponsive div p {
+        grid-area: descripcion;
+        width: 98%;
+        margin-top: 1vh;
+        padding-right: 2vh; }
+      .reseñaLibrosResponsive div input {
+        grid-area: boton;
+        margin: 0;
+        min-width: 15vw;
+        margin-bottom: 2vh; } }
+
+@media (max-width: 475px) {
+  .encabezadoLibros h1 {
+    font-size: 1.5rem; }
+  .encabezadoLibros p {
+    font-size: 1.2rem; }
+    .encabezadoLibros p span {
+      display: none; }
+  .reseñaLibrosResponsive div img {
+    max-height: 40vh; }
+  .reseñaLibrosResponsive div p {
+    font-size: 0.7rem; }
+  .reseñaLibrosResponsive div input {
+    min-width: 20vw; } }
+
+@media (max-width: 375px) {
+  .encabezadoLibros h1 {
+    font-size: 1.2rem; }
+  .encabezadoLibros p {
+    font-size: 1rem; }
+  .reseñaLibrosResponsive {
+    display: flex; }
+    .reseñaLibrosResponsive div h2 {
+      font-size: 1.2rem; } }
+
+@media (max-width: 320px) {
+  .encabezadoLibros span {
+    width: 55%; }
+  .encabezadoLibros h1 {
+    font-size: 1rem; }
+  .encabezadoLibros p {
+    font-size: 0.8rem;
+    padding-left: 2vw; }
+  .reseñaLibrosResponsive {
+    display: flex; }
+    .reseñaLibrosResponsive div h2 {
+      font-size: 1.2rem; }
+    .reseñaLibrosResponsive div img {
+      max-height: 35vh; } }
 
 .encabezadoCol {
   max-width: 100%;
