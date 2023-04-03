@@ -96,112 +96,6 @@ footer {
     margin-left: 17%;
     margin-top: 1vh; }
 
-.encabezadoCasas {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2vh; }
-  .encabezadoCasas div {
-    max-width: 50%; }
-  .encabezadoCasas h1 {
-    font-size: 4rem;
-    text-align: center; }
-  .encabezadoCasas p {
-    padding-right: 0.5vw;
-    margin-left: 3vw;
-    font-size: 3rem; }
-  .encabezadoCasas img {
-    max-height: 80vh;
-    margin-right: 1vw; }
-
-.presentacion {
-  max-width: 98%;
-  max-height: 70vh;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden; }
-  .presentacion p {
-    font-size: 3rem;
-    max-width: 45vw;
-    margin-left: 2vw; }
-  .presentacion img {
-    max-width: 40vw;
-    margin-right: 1vw; }
-
-.fundador {
-  max-width: 98%;
-  margin: auto;
-  margin-top: 2vh;
-  display: flex; }
-  .fundador img {
-    box-shadow: 0.5px 0.5px 20px black;
-    float: right;
-    padding: 1vw;
-    margin-top: 9vh;
-    margin-left: 1vw;
-    margin-right: 1vw; }
-  .fundador h3 {
-    padding-left: 3vw;
-    font-size: 3rem; }
-  .fundador p {
-    padding-left: 3vw;
-    padding-right: 1vw;
-    font-size: 1.5rem;
-    max-width: 95%; }
-
-.curiosidades {
-  display: flex;
-  flex-direction: column;
-  width: 98%;
-  margin: auto;
-  margin-top: 2vh; }
-  .curiosidades .salaComun {
-    margin-bottom: 2vh;
-    padding: 1vh 1vw 0 1vw; }
-    .curiosidades .salaComun p {
-      max-width: 98%; }
-  .curiosidades .reliquia {
-    display: flex;
-    margin-bottom: 2vh; }
-    .curiosidades .reliquia img {
-      max-height: 50vh;
-      margin: 1vw;
-      box-shadow: 0.5px 0.5px 20px black; }
-  .curiosidades .famosos {
-    display: flex;
-    justify-content: space-around; }
-    .curiosidades .famosos .ulFamosos {
-      width: 65%;
-      box-shadow: none; }
-    .curiosidades .famosos div {
-      width: 30vw;
-      padding: 1vw 1vh 1vw 1vh;
-      margin: 1vw;
-      box-shadow: 0.5px 0.5px 20px black; }
-      .curiosidades .famosos div img {
-        max-width: 98%;
-        padding-left: 1.5vw;
-        padding-right: 1vw;
-        margin-top: 2vh; }
-      .curiosidades .famosos div p {
-        font-size: 1rem;
-        padding: 0; }
-  .curiosidades h3 {
-    margin: 0;
-    padding-left: 3vw;
-    font-size: 3rem; }
-  .curiosidades h4 {
-    padding-left: 1vw;
-    font-size: 2rem; }
-  .curiosidades p {
-    font-size: 1.5rem;
-    padding-left: 1vw; }
-  .curiosidades li {
-    font-size: 1.5rem;
-    padding-left: 1vw;
-    list-style: none; }
-
 body::-webkit-scrollbar {
   width: 7px;
   background-color: #1b1b1b; }
@@ -338,6 +232,186 @@ body::-webkit-scrollbar-thumb {
       padding: 0;
       padding-left: 1vw;
       font-size: 0.8rem; } }
+
+.encabezadoCasas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh; }
+  .encabezadoCasas div {
+    max-width: 50%; }
+  .encabezadoCasas h1 {
+    font-size: 4rem;
+    text-align: center; }
+  .encabezadoCasas p {
+    padding-right: 0.5vw;
+    margin-left: 3vw;
+    font-size: 3rem; }
+  .encabezadoCasas img {
+    max-height: 80vh;
+    margin-right: 1vw; }
+
+.presentacion {
+  max-width: 98%;
+  max-height: 70vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; }
+  .presentacion p {
+    font-size: 3rem;
+    max-width: 45vw;
+    margin-left: 2vw; }
+  .presentacion img {
+    max-width: 40vw;
+    margin-right: 1vw; }
+
+.fundador {
+  max-width: 98%;
+  margin: auto;
+  margin-top: 2vh;
+  display: flex; }
+  .fundador img {
+    box-shadow: 0.5px 0.5px 20px black;
+    float: right;
+    padding: 1vw;
+    margin-top: 9vh;
+    margin-left: 1vw;
+    margin-right: 1vw; }
+  .fundador h3 {
+    padding-left: 3vw;
+    font-size: 3rem; }
+  .fundador p {
+    padding-left: 3vw;
+    padding-right: 1vw;
+    font-size: 1.5rem;
+    max-width: 95%; }
+
+.curiosidades {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: auto;
+  margin-top: 2vh; }
+  .curiosidades .salaComun {
+    margin-bottom: 2vh;
+    padding: 1vh 1vw 0 1vw; }
+    .curiosidades .salaComun p {
+      max-width: 98%; }
+  .curiosidades .reliquia {
+    display: flex;
+    margin-bottom: 2vh; }
+    .curiosidades .reliquia img {
+      max-height: 50vh;
+      margin: 1vw;
+      box-shadow: 0.5px 0.5px 20px black; }
+    .curiosidades .reliquia .salaComun_img {
+      display: none; }
+  .curiosidades .rSlytherin figure {
+    display: none; }
+  .curiosidades .famosos {
+    display: flex;
+    justify-content: space-around; }
+    .curiosidades .famosos .ulFamosos {
+      width: 65%;
+      box-shadow: none; }
+    .curiosidades .famosos div {
+      width: 30vw;
+      padding: 1vw 1vh 1vw 1vh;
+      margin: 1vw;
+      box-shadow: 0.5px 0.5px 20px black; }
+      .curiosidades .famosos div img {
+        max-width: 98%;
+        padding-left: 1.5vw;
+        padding-right: 1vw;
+        margin-top: 2vh; }
+      .curiosidades .famosos div p {
+        font-size: 1rem;
+        padding: 0; }
+  .curiosidades h3 {
+    margin: 0;
+    padding-left: 3vw;
+    font-size: 3rem; }
+  .curiosidades h4 {
+    padding-left: 1vw;
+    font-size: 2rem; }
+  .curiosidades p {
+    font-size: 1.5rem;
+    padding-left: 1vw; }
+  .curiosidades li {
+    font-size: 1.5rem;
+    padding-left: 1vw;
+    list-style: none; }
+
+@media (max-width: 1066px) {
+  .presentacion {
+    max-height: 80vh; }
+    .presentacion p {
+      font-size: 2.5rem; }
+  .eRavenclaw p {
+    font-size: 2.5rem; }
+  .curiosidades .rRavenclaw p {
+    font-size: 1.3rem; }
+  .curiosidades .rRavenclaw img {
+    max-height: 53vh;
+    margin-top: 4vh; } }
+
+@media (max-width: 930px) {
+  .encabezadoCasas p {
+    margin-left: 2vw;
+    font-size: 2rem; }
+  .encabezadoCasas img {
+    max-height: 80vh;
+    margin-right: 1vw; }
+  .preSlytherin p {
+    font-size: 2.3rem; }
+  .preRavenclaw p {
+    font-size: 2rem; } }
+
+@media (max-width: 835px) {
+  .encabezadoCasas div {
+    max-width: 60%; }
+  .encabezadoCasas h1 {
+    font-size: 3rem; }
+  .encabezadoCasas p {
+    margin-left: 2vw;
+    font-size: 2rem; }
+  .encabezadoCasas img {
+    max-height: 65vh;
+    margin-right: 1vw; }
+  .eRavenclaw img {
+    max-height: 76vh; }
+  .eSlytherin img {
+    max-height: none;
+    max-width: 50vw; }
+  .presentacion p {
+    font-size: 2rem; }
+  .preRavenclaw p {
+    font-size: 1.7rem; } }
+
+@media (max-width: 768px) {
+  .encabezadoCasas {
+    align-items: center; }
+    .encabezadoCasas div {
+      display: flex;
+      min-width: 100%; }
+      .encabezadoCasas div h1 {
+        width: 50%;
+        padding-top: 10vh; }
+      .encabezadoCasas div span {
+        font-weight: 600;
+        padding-right: 2vw; }
+    .encabezadoCasas img {
+      display: none; }
+  .curiosidades .reliquia {
+    flex-direction: column; }
+    .curiosidades .reliquia .imgGuardapelo {
+      display: none; }
+    .curiosidades .reliquia figure {
+      display: flex;
+      justify-content: space-around; }
+      .curiosidades .reliquia figure .salaComun_img {
+        display: block; } }
 
 .encabezadoIndex {
   width: 100%;
@@ -804,6 +878,12 @@ h2 {
     .cromo .boton {
       width: 10vw; } }
 
+@media (max-width: 930px) {
+  .encabezadoCol h1 {
+    font-size: 2.5rem; }
+  .encabezadoCol p {
+    font-size: 2rem; } }
+
 .eGryffindor {
   background-color: rgba(116, 0, 1, 0.5); }
   .eGryffindor h1 {
@@ -988,18 +1068,8 @@ h2 {
 .liRavenclaw {
   color: #e6edea; }
 
-@media (max-width: 1066px) {
-  .eRavenclaw p {
-    font-size: 2.5rem; }
-  .curiosidades .rRavenclaw p {
-    font-size: 1.3rem; }
-  .curiosidades .rRavenclaw img {
-    max-height: 53vh;
-    margin-top: 4vh; } }
-
 .eSlytherin {
-  background-color: rgba(21, 48, 42, 0.6);
-  min-height: 80vh; }
+  background-color: rgba(21, 48, 42, 0.6); }
   .eSlytherin div {
     max-width: 65%; }
   .eSlytherin h1 {
