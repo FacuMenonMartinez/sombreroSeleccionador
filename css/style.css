@@ -724,12 +724,69 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2rem;
     max-width: none;
     padding: 1vh 2vw 1vw 2vw; }
-  .curiosidades .rSlytherin img {
+  .curiosidades .rSlytherin img, .curiosidades .rRavenclaw img {
     max-height: 40vh; }
   .curiosidades .famosos ul {
     padding: 0; }
   .curiosidades .famosos li {
     font-size: 1rem; } }
+
+@media (max-width: 425px) {
+  .presentacion p {
+    font-size: 1.5rem; }
+  .presentacion img {
+    margin: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    box-shadow: 0 0 10px black; }
+  .fundador div {
+    display: grid;
+    grid-template-areas: "nombre" "bio" "img";
+    justify-items: center; }
+    .fundador div h3 {
+      grid-area: nombre;
+      font-size: 2.5rem;
+      padding-left: 0; }
+    .fundador div p {
+      grid-area: bio;
+      font-weight: 550;
+      text-align: center;
+      cursor: pointer; }
+    .fundador div img {
+      float: none;
+      grid-area: img; }
+  .curiosidades h3 {
+    font-size: 2rem; }
+  .curiosidades h4 {
+    font-size: 1.7rem;
+    text-align: center; }
+  .curiosidades p {
+    text-align: center;
+    font-weight: 550; }
+  .curiosidades .reliquia figure {
+    flex-direction: column;
+    align-items: center; }
+    .curiosidades .reliquia figure img {
+      max-height: none;
+      max-width: 85vw; }
+  .curiosidades .famosos {
+    flex-direction: column;
+    align-items: center; }
+    .curiosidades .famosos .ulFamosos {
+      width: 100%;
+      margin-bottom: 0; }
+    .curiosidades .famosos li {
+      font-weight: 550;
+      font-size: 1.5rem; }
+    .curiosidades .famosos div {
+      width: 95%;
+      margin: 3vw; } }
+
+@media (max-width: 375px) {
+  .encabezadoCasas {
+    align-items: center; }
+    .encabezadoCasas div span p {
+      font-size: 1.5rem; } }
 
 .encabezadoIndex {
   width: 100%;
