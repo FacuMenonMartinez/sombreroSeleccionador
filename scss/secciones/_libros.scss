@@ -1,0 +1,400 @@
+// ENCABEZADO
+.encabezadoLibros {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(27, 27, 27, 0.600);
+    margin-bottom: 2vh;
+
+    span {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    p {
+        margin-left: 1vw;
+        font-size: 2.5rem;
+    }
+
+    img {
+        margin-right: 1vw;
+    }
+}
+
+// RESEÑA DE LOS LIBROS
+.reseñaLibros,
+.reseñaLibrosResponsive {
+    background-color: $fondo;
+    max-width: 98%;
+    margin: auto;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-wrap: nowrap;
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-left: 2vh;
+    }
+
+    img {
+        // object-fit: contain;
+        max-height: 70vh;
+        padding: 2vh;
+    }
+
+    button {
+        background-color: $letra-blanco;
+        min-width: 12vw;
+        max-height: 7vh;
+        font-size: 1.2rem;
+        color: $fondo;
+        margin-left: 50%;
+        margin-bottom: 1vh;
+        border-radius: 30vh;
+        border: none;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    button:hover {
+        background-color: $fondo;
+        color: $letra-blanco;
+        // Puesto asi porque si uso border se agranda el contenedor
+        box-shadow: 0px 0px 2px $letra-blanco;
+    }
+
+
+}
+
+.reseñaLibrosResponsive {
+    display: none;
+}
+
+// --------------------------------------------ADAPTACION RESPONSIVE--------------------------------------------
+// ARREGLO PANTALLAS GRANDES 1024
+@media (max-width: 1066px) {
+    .encabezadoLibros {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        img {
+            max-width: 65vh;
+        }
+    }
+
+    .reseñaLibros,
+    .reseñaLibrosResponsive {
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        img {
+            // object-fit: contain;
+            max-height: 90vh;
+            padding: 2vh;
+        }
+
+    }
+
+}
+
+// DISPOSITIVOS GRANDES
+@media (max-width: 930px) {
+    .encabezadoLibros {
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+    }
+
+    .reseñaLibros,
+    .reseñaLibrosResponsive {
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+            padding-left: 2vh;
+        }
+
+        img {
+            max-height: 60vh;
+
+        }
+
+
+
+    }
+
+}
+
+@media (max-width: 835px) {
+    .encabezadoLibros {
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+        }
+
+    }
+
+    .reseñaLibros,
+    .reseñaLibrosResponsive {
+        align-items: center;
+
+        p {
+            font-size: 1rem;
+        }
+
+        img {
+            max-height: 60vh;
+
+        }
+
+    }
+
+
+}
+
+@media (max-width: 725px) {
+    .encabezadoLibros {
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .reseñaLibros,
+    .reseñaLibrosResponsive {
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        button {
+            background-color: $letra-blanco;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 25vh;
+
+        }
+    }
+}
+
+//-----------------------------------  Dispositivos pequeños
+@media(max-width:576px) {
+    .encabezadoLibros {
+
+        h1 {
+            display: none;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        i {
+            padding-left: 1vw;
+        }
+
+        img {
+            max-width: 45vw;
+            max-height: 35vw;
+        }
+    }
+
+    .reseñaLibros {
+        max-width: 95%;
+        flex-direction: column-reverse;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2{
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        p {
+            padding:1vh ;
+            text-align: justify;
+        }
+
+        button{
+            margin-left: 0;
+        }
+
+
+    }
+
+    .reseñaLibrosResponsive {
+        display: flex;
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "titulo"
+                "foto"
+                "descripcion"
+                "boton";
+            justify-items: center;
+
+            h2 {
+                grid-area: titulo;
+            }
+
+            img {
+                grid-area: foto;
+                max-height: 50vh;
+                padding: 0;
+            }
+
+            p {
+                grid-area: descripcion;
+                width: 98%;
+                margin-top: 1vh;
+                padding-right: 2vh;
+            }
+
+            input {
+                grid-area: boton;
+                margin: 0;
+                min-width: 15vw;
+                margin-bottom: 2vh;
+            }
+        }
+
+
+    }
+}
+
+@media(max-width:475px) {
+    .encabezadoLibros {
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .reseñaLibrosResponsive {
+        div {
+            img {
+                max-height: 40vh;
+            }
+
+            p {
+                font-size: 0.7rem;
+
+            }
+
+            input {
+                min-width: 20vw;
+            }
+
+        }
+
+
+    }
+
+}
+
+@media(max-width:375px) {
+    .encabezadoLibros {
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .reseñaLibrosResponsive {
+        display: flex;
+
+        div {
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+
+    }
+
+
+}
+
+@media(max-width:320px) {
+    .encabezadoLibros {
+        span {
+            width: 55%;
+        }
+
+        h1 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            padding-left: 2vw;
+        }
+    }
+
+    .reseñaLibrosResponsive {
+        display: flex;
+
+        div {
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            img {
+                max-height: 35vh;
+            }
+        }
+
+
+    }
+
+}

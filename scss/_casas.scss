@@ -1,0 +1,968 @@
+// ENCABEZADO
+.encabezadoCasas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+
+    div {
+        max-width: 50%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    p {
+        padding-right: 0.5vw;
+        margin-left: 3vw;
+        font-size: 3rem;
+    }
+
+    img {
+        max-height: 80vh;
+        margin-right: 1vw;
+    }
+
+}
+
+// PRESENTACION
+.presentacion {
+    max-width: 98%;
+    max-height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    p {
+        font-size: 3rem;
+        max-width: 45vw;
+        margin-left: 2vw;
+    }
+
+    img {
+        max-width: 40vw;
+        margin-right: 1vw;
+    }
+
+}
+
+// FUNDADOR//
+.fundador {
+    max-width: 98%;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+
+    img {
+        box-shadow: 0.5px 0.5px 20px black;
+        float: right;
+        padding: 1vw;
+        margin-top: 9vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    h3 {
+        padding-left: 3vw;
+        font-size: 3rem;
+
+    }
+
+    p {
+        padding-left: 3vw;
+        padding-right: 1vw;
+        font-size: 1.5rem;
+        max-width: 95%;
+    }
+
+}
+
+// CURIOSIDADES
+.curiosidades {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: auto;
+    margin-top: 2vh;
+
+    // Secciones de curiosidades
+    .salaComun {
+        margin-bottom: 2vh;
+        padding: 1vh 1vw 0 1vw;
+
+        p {
+            max-width: 98%;
+        }
+
+    }
+
+    .reliquia {
+        display: flex;
+        margin-bottom: 2vh;
+
+        img {
+            max-height: 50vh;
+            margin: 1vw;
+            box-shadow: 0.5px 0.5px 20px black;
+        }
+
+        .salaComun_img {
+            display: none;
+
+        }
+
+    }
+
+    .rSlytherin {
+        figure {
+            display: none;
+        }
+    }
+
+    .famosos {
+        display: flex;
+        justify-content: space-around;
+
+
+
+        .ulFamosos {
+            width: 65%;
+            box-shadow: none;
+        }
+
+        div {
+            width: 30vw;
+            padding: 1vw 1vh 1vw 1vh;
+            margin: 1vw;
+            box-shadow: 0.5px 0.5px 20px black;
+
+            img {
+                max-width: 98%;
+                padding-left: 1.5vw;
+                padding-right: 1vw;
+                margin-top: 2vh;
+
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 0;
+            }
+
+
+        }
+
+    }
+
+    // Texto curiosidades
+    h3 {
+        margin: 0;
+        padding-left: 3vw;
+        font-size: 3rem;
+    }
+
+    h4 {
+        padding-left: 1vw;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-left: 1vw;
+    }
+
+    li {
+        font-size: 1.5rem;
+        padding-left: 1vw;
+        list-style: none;
+
+
+    }
+
+
+}
+// ------------------------------------------CADA CASA ESTILO------------------------------------
+// ----------------------- GRYFFINDOR
+.eGryffindor{
+    background-color: rgba(116, 0, 1, 0.5);
+
+    h1{
+        color: $gryffindor-caramelo;
+    }
+
+    i {
+        color: $gryffindor-caramelo;
+    }
+
+}
+.preGryffindor{
+    background-color: rgba(116, 0, 1, 0.7);
+
+    p {
+        color: $gryffindor-caramelo;
+        max-width: 60%;
+        padding-right: 0.5vw;
+    }
+
+    img {
+        max-height: 90vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}
+.fGryffindor{
+    background-color: rgba(116, 0, 1, 0.4);
+
+    h3 {
+        color: $gryffindor-caramelo;
+        text-shadow: 0px 0px 30px $gryffindor-amarillo;
+
+    }
+
+    p {
+        color: $gryffindor-caramelo;
+        }
+    
+
+}
+// DATOS
+    .scGryffindor{
+        background-color: rgba(116, 0, 1, 0.4);
+        color: $gryffindor-caramelo;
+    }
+    .rGryffindor{
+
+        background-color: rgba(116, 0, 1, 0.4);
+
+
+    }
+    .famGryffindor{
+        background-color: rgba(116, 0, 1, 0.4);
+        p{
+            margin-top: 1vh;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+    // H3
+    .cGryffindor {
+        margin: 0;
+        background-color: rgba(116, 0, 1, 0.4);
+        color: $gryffindor-caramelo;
+        padding-left: 3vw;
+        font-size: 3rem;
+    }
+
+    .h4Gryffindor{
+        color: $gryffindor-caramelo;
+
+    }
+    .pGryffindor{
+        color: $gryffindor-caramelo;
+
+    }
+    .liGryffindor{
+        color: $gryffindor-caramelo;
+
+    }
+//------------------------ HUFFLEPUFF
+.eHufflepuff {
+    background-color: rgba(242, 193, 54, 0.7);
+
+    h1 {
+        color: $hufflepuff-negro;
+    }
+
+    i {
+        color: $hufflepuff-marron;
+
+    }
+    img{
+        max-height: 70vh;
+    }
+
+}
+.preHufflepuff {
+    background-color: rgba(242, 193, 54, 0.8);
+    max-height: 80vh;
+
+    p {
+        max-width: 55%;
+        color: $hufflepuff-marron;
+        font-weight: 500;
+    }
+
+    img {
+        max-height: 90vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}
+.fHUfflepuff {
+    background-color: rgba(242, 193, 54, 0.8);
+
+    h3 {
+        color: $hufflepuff-negro;
+        text-shadow: 0px 0px 25px $hufflepuff-marron;
+
+    }
+
+    p {
+        color: $hufflepuff-marron;
+        font-weight: 500;
+
+    }
+}
+// DATOS
+.scHufflepuff {
+    background-color: rgba(242, 193, 54, 0.8);
+    color: $hufflepuff-marron;
+
+    p{
+        max-width: 90vw;
+        font-weight: 500;
+    }
+}
+.rHufflepuff {
+
+    background-color: rgba(242, 193, 54, 0.8);
+
+}
+.famHufflepuff {
+    background-color: rgba(242, 193, 54, 0.8);
+    
+    p{
+        margin-top: 1vh;
+        text-align: center;
+        font-weight: 500;
+    }
+
+}
+// H3
+.cHufflepuff {
+    margin: 0;
+    background-color: rgba(242, 193, 54, 0.8);
+    color: $hufflepuff-marron;
+    padding-left: 3vw;
+    font-size: 3rem;
+}
+
+.h4Hufflepuff {
+    color: $hufflepuff-marron;
+
+}
+
+.pHufflepuff {
+    color: $hufflepuff-marron;
+
+}
+
+.liHufflepuff {
+    color: $hufflepuff-marron;
+
+} 
+//------------------------ RAVENCLAW
+.eRavenclaw {
+    background-color: rgba(45,58,101, 0.5);
+    div{
+        max-width: 65%;
+    }
+
+    h1 {
+        color: $ravenclaw-plata;
+    }
+
+    i {
+        color: $ravenclaw-plata;
+
+    }
+
+}
+
+.preRavenclaw {
+    background-color: rgba(45,58,101, 0.9);
+    max-height: 90vh;
+
+    p {
+        color: $ravenclaw-plata;
+        max-width: 65%;
+        padding-right: 0.5vw;
+    }
+
+    img {
+        max-height: 90vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}
+
+.fRavenclaw {
+    background-color: rgba(45,58,101, 0.9);
+
+    h3 {
+        color: $ravenclaw-plata;
+        text-shadow: 0px 0px 30px $ravenclaw-plata;
+
+    }
+
+    p {
+        color: $ravenclaw-plata;
+
+    }
+}
+// DATOS
+.scRavenclaw {
+    background-color: rgba(45,58,101, 0.9);
+    color: $ravenclaw-plata;
+
+    p{
+        max-width: 90vw;
+    }
+}
+
+.rRavenclaw {
+
+    background-color: rgba(45,58,101, 0.9);
+
+}
+
+.famRavenclaw {
+    background-color: rgba(45,58,101, 0.9);
+    
+    p{
+        margin-top: 1vh;
+        text-align: center;
+        font-weight: 500;
+    }
+
+}
+// H3
+.cRavenclaw {
+    margin: 0;
+    background-color: rgba(45,58,101, 0.9);
+    color: $ravenclaw-plata;
+    padding-left: 3vw;
+    font-size: 3rem;
+}
+
+.h4Ravenclaw {
+    color: $ravenclaw-plata;
+
+}
+
+.pRavenclaw {
+    color: $ravenclaw-plata;
+
+}
+
+.liRavenclaw {
+    color: $ravenclaw-plata;
+
+}
+// ------------------------ SLYTHERIN
+.eSlytherin {
+    background-color: rgba(21,48,42, 0.6);
+
+    div{
+        max-width: 65%;
+    }
+
+    h1 {
+        color: $slytherin-plata;
+        margin-bottom: 2vh;
+    }
+
+    p{
+        margin-top: 5vh;
+    }
+    i {
+        color: $slytherin-plata;
+    }
+
+}
+.preSlytherin {
+    background-color: rgba(21,48,42, 0.9);
+    max-height: 80vh;
+
+    p {
+        color: $slytherin-plata;
+        max-width: 65%;
+        padding-right: 0.5vw;
+    }
+
+    img {
+        max-height: 90vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}
+.fSlytherin {
+    background-color: rgba(21,48,42, 0.9);
+
+    h3 {
+        color: $slytherin-plata;
+        text-shadow: 0px 0px 15px $slytherin-esmeralda;
+
+    }
+
+    p {
+        color: $slytherin-plata;
+
+    }
+}
+// DATOS
+.scSlytherin {
+    background-color: rgba(21,48,42, 0.9);
+    color: $slytherin-plata;
+
+    p{
+        max-width: 90vw;
+    }
+}
+.curiosidades{
+    .rSlytherin {
+
+        background-color: rgba(21,48,42, 0.9);
+        display: inline-block;
+
+            //Puesto asi para que quede mejor el diseño con la cantidad de texto 
+        .imgGuardapelo{
+            float: right;
+            margin-top: 9vh;
+            margin-right: 2vw;
+        }
+
+        p{
+            max-width: 98%;
+        }
+        
+    }
+
+}
+.famSlytherin {
+    background-color: rgba(21,48,42, 0.9);
+    
+    p{
+        margin-top: 1vh;
+        text-align: center;
+        font-weight: 500;
+    }
+
+}
+// H3
+.cSlytherin {
+    margin: 0;
+    background-color: rgba(21,48,42, 0.9);
+    color: $slytherin-plata;
+}
+.h4Slytherin {
+    color: $slytherin-plata;
+
+}
+.pSlytherin {
+    color: $slytherin-plata;
+
+}
+.liSlytherin {
+    color: $slytherin-plata;
+
+}
+//------------------------------------------------- ADAPTACION RESPONSIVE
+@media (max-width: 1066px) {
+
+    // PRESENTACION
+    .presentacion {
+        max-height: 80vh;
+
+        p {
+            font-size: 2.5rem;
+        }
+    }
+
+    // RAVENCLAW
+    // Encabezado
+    .eRavenclaw {
+        p {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    .curiosidades {
+        .rRavenclaw {
+            p {
+                font-size: 1.3rem;
+            }
+
+            img {
+                max-height: 53vh;
+                margin-top: 4vh;
+            }
+        }
+    }
+}
+
+@media (max-width:930px) {
+    .encabezadoCasas {
+
+        p {
+            margin-left: 2vw;
+            font-size: 2rem;
+        }
+
+        img {
+            max-height: 80vh;
+            margin-right: 1vw;
+        }
+
+    }
+
+    // Presentacion Slytherin Ravenclaw
+    .preSlytherin {
+        p {
+            font-size: 2.3rem;
+        }
+
+    }
+
+    .preRavenclaw {
+        p {
+            font-size: 2rem;
+        }
+
+    }
+}
+
+// Dispositivos Medianos
+@media (max-width: 835px) {
+    .encabezadoCasas {
+        div {
+            max-width: 60%;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            margin-left: 2vw;
+            font-size: 2rem;
+        }
+
+        img {
+            max-height: 65vh;
+            margin-right: 1vw;
+        }
+
+    }
+
+    // Ravenclaw
+    .eRavenclaw {
+        img {
+            max-height: 76vh;
+        }
+    }
+
+    // Encabezado Slytherin
+    .eSlytherin {
+        img {
+            max-height: none;
+            max-width: 50vw;
+        }
+    }
+
+    .presentacion {
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .preRavenclaw {
+        p {
+            font-size: 1.7rem;
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .encabezadoCasas {
+        align-items: center;
+
+        div {
+            display: flex;
+            min-width: 100%;
+
+            h1 {
+                width: 50%;
+                padding-top: 10vh;
+            }
+
+            span {
+                font-weight: 600;
+                padding-right: 2vw;
+            }
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .curiosidades {
+        .reliquia {
+
+            // SLYTHERIN
+            .imgGuardapelo {
+                display: none;
+            }
+
+            flex-direction: column;
+
+            figure {
+                display: flex;
+                justify-content: space-around;
+
+                .salaComun_img {
+                    display: block;
+                }
+            }
+        }
+
+        .famosos {
+
+            li {
+                font-size: 1.3rem;
+            }
+
+
+            div {
+                width: 60vw;
+
+            }
+
+        }
+    }
+
+
+}
+
+// Dispositivos Pequeños
+@media (max-width:576px) {
+    .encabezadoCasas {
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                width: 50%;
+                padding-top: 0;
+            }
+
+            span {
+                font-weight: 500;
+                padding-right: 0;
+                max-width: 96%;
+                margin: auto;
+
+                p {
+                    margin: 0;
+                }
+
+                .txtAutor {
+                    padding-left: 4vw;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+    // Encabezado Ravenclaw mas texto, por eso menos tamaño
+    .eRavenclaw {
+        div {
+            .txtFrase {
+                font-size: 1.5rem;
+            }
+
+            .txtAutor {
+                padding-left: 4vw;
+                font-size: 1.7rem;
+            }
+        }
+
+    }
+
+// Presentacion gral
+    .presentacion, .preHufflepuff, .preGryffindor, .preRavenclaw, .preSlytherin {
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        p {
+            max-width: 95%;
+            margin: auto;
+            font-size: 2rem;
+        }
+        img{
+            margin: 0;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            box-shadow: 0 0 10px black;
+        }
+    }
+    .fundador{
+        div{
+            h3{
+             font-size: 2rem ;
+            }
+            p{
+                font-size: 1.2rem;
+                padding-right: 2vw;
+                max-width: none;
+            }
+            img{
+                margin: 2vw;
+            }
+        }
+    }
+    .curiosidades{
+        h3{
+            font-size: 2.5rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        .salaComun{
+            p{
+                font-size: 1.2rem;
+                max-width: none;
+                padding: 1vh 2vw 1vw 2vw;
+            }
+        }
+        .reliquia{
+            p{
+                font-size: 1.2rem;
+                max-width: none;
+                padding: 1vh 2vw 1vw 2vw;
+
+            }
+
+        }
+// IMG reliquia Slytherin
+        .rSlytherin, .rRavenclaw{
+            img{
+                max-height: 40vh;
+            }
+        }
+
+        .famosos{
+            ul{
+                padding: 0;
+            }
+            li{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 425px){
+    .presentacion {
+        p {
+            font-size: 1.5rem;
+        }
+        img{
+            margin: 0;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            box-shadow: 0 0 10px black;
+        }
+    }
+    .fundador{
+    div{
+        display: grid;
+        grid-template-areas: 
+        "nombre"
+        "bio"
+        "img";
+        justify-items: center;
+        h3{
+            grid-area: nombre;
+            font-size: 2.5rem;
+            padding-left: 0;
+        }
+        p{
+            grid-area: bio;
+            font-weight: 550;
+            text-align: center;
+            cursor: pointer;
+        }
+        img{
+            float:none ;
+            grid-area: img;
+        }
+
+    }
+
+    }
+    .curiosidades{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1.7rem;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-weight: 550;
+        }
+        .reliquia{
+            figure{
+                flex-direction: column;
+                align-items: center;
+                img{
+                    max-height: none;
+                    max-width: 85vw;
+                }
+            }
+        }
+        .famosos{
+            flex-direction: column;
+            align-items: center;
+            
+            .ulFamosos{
+                width: 100%;
+                margin-bottom: 0;
+            }
+            li{
+                font-weight: 550;
+                font-size: 1.5rem;
+            }
+            div{
+                width: 95%;
+                margin: 3vw;
+            }
+        }
+    }
+}
+@media (max-width:375px){
+    .encabezadoCasas {
+        align-items: center;
+
+        div {
+
+
+            span {
+                p {
+                    font-size: 1.5rem;
+                }
+
+            }
+        }
+    }
+
+}

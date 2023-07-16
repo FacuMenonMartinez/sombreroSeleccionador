@@ -1,0 +1,297 @@
+// ENCABEZADO
+.encabezadoIndex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(27, 27, 27, 0.600);
+    margin-bottom: 2vh;
+    
+    h1{
+        color: $letra-blanco;
+        font-size: 7rem;
+        margin-bottom: -80px;
+    }
+    img{
+        max-width: 45vw;
+        margin-bottom: -80px;
+    }
+    p{
+        color: $letra-blanco;
+        font-size: 3rem;
+    }
+}
+
+// MAIN
+.bienvenida{
+    display: flex;
+    background-color:$fondo;
+    justify-content: space-between;
+    p{
+        max-width: 50%;
+        color: $letra-blanco;
+        font-size: 2rem;
+        padding-left: 2vw;
+        padding-top: 2vh;
+    }
+    img{
+        max-width: 30%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-right: 4vw;
+    }
+}
+.mainMenu{
+    width: 95%;
+    margin: auto;
+    .mainLibros, .mainColeccionables, .mainGry, .mainHuf, .mainRav, .mainSly{
+        margin-top: 3vh;
+        width: 100%;
+        display: flex;
+        background: linear-gradient(160deg, rgba(0,0,0,0.7) 35%, rgba(67,110,125,0.7) 90%);
+        justify-content: space-between;
+        align-items: center;
+        color: $letra-blanco;
+        text-decoration: none;
+       
+        h2{
+            font-size: 3rem;
+            padding-left: 3vw;
+        }
+        img{
+            max-width: 10%;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            padding-right: 2vw;
+        }
+    }
+    .mainGry{
+        background: linear-gradient(160deg, rgba(0,0,0,0.7) 20%, rgba(154, 28, 31, 0.9) 95%);
+
+    }
+    .mainHuf{
+        background: linear-gradient(160deg, rgba(0,0,0,0.7) 20%, rgba(242,193,54, 0.9) 95%);
+
+    }
+    .mainRav{
+        background: linear-gradient(160deg, rgba(0,0,0,0.7) 20%, rgba(18,29,62, 0.9) 95%);
+
+    }
+    .mainSly{
+        background: linear-gradient(160deg, rgba(0,0,0,0.7) 20%, rgba(23,117,83, 0.9) 95%);
+
+    }
+
+
+}
+
+// --------------------------------------------ADAPTACION RESPONSIVE--------------------------------------------
+// ARREGLO PANTALLAS GRANDES 1066
+@media (max-width: 1066px){
+    .encabezadoIndex{
+        h1{
+            font-size: 5rem;
+        }
+    }
+
+    .bienvenida{
+        p{
+            max-width: 65%;
+        }
+        img{
+            max-width: 49vh;
+        }
+    }
+    
+}
+// DISPOSITIVOS MEDIANOS
+@media(max-width: 991px){
+
+    .encabezadoIndex{
+        h1{
+            font-size: 4.5rem;
+            margin-bottom: -60px;
+        }
+
+        img{
+
+            margin-bottom: -60px;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+    }
+
+    .bienvenida{
+        img{
+            max-width: 50vh;
+        }
+        p{
+            font-size: 1.7rem;
+
+        }
+    }
+
+}
+@media(max-width:855px){
+
+    .encabezadoIndex{
+        h1{
+            font-size: 4.5rem;
+            margin-bottom: -50px;
+        }
+
+        img{
+            max-width: 40vw;
+            margin-bottom: -50px;
+        }
+        p{
+            font-size: 2.0rem;
+        }
+    }
+
+    .bienvenida{
+        img{
+            max-width: 45vh;
+        }
+        p{
+            font-size: 1.5rem;
+
+        }
+    }
+
+}
+@media(max-width:700px){
+    .encabezadoIndex{
+        h1{
+            font-size: 4rem;
+            margin-bottom: -40px;
+        }
+
+        img{
+            max-width: 35vw;
+            margin-bottom: -40px;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .bienvenida{
+        img{
+            max-width: 45vw;
+        }
+    }
+
+}
+@media(max-width:610px){
+    .encabezadoIndex{
+        h1{
+            font-size: 3rem;
+            margin-bottom: -30px;
+        }
+
+        img{
+            max-width: 35vw;
+            margin-bottom: -30px;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+
+}
+// DISPOSITIVOS PEQUEÑOS
+@media(max-width:510px){
+    .encabezadoIndex{
+        h1{
+            font-size: 2.2rem;
+            margin-bottom: -20px;
+        }
+
+        img{
+            max-width: 35vw;
+            margin-bottom: -20px;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .bienvenida{
+        img{
+            max-width: 45vw;
+        }
+        p{
+            font-size: 1rem;
+
+        }
+    }
+
+}
+@media(max-width:475px){
+    .encabezadoIndex{
+        h1{
+            font-size: 2rem;
+            margin-bottom: -10px;
+        }
+
+        img{
+            max-width: 35vw;
+            margin-bottom: -10px;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .bienvenida{
+
+        p{
+            font-size: 0.8rem;
+
+        }
+    }
+
+    .mainMenu{
+               .mainLibros, .mainColeccionables, .mainGry, .mainHuf, .mainRav, .mainSly{
+                      
+            h2{
+                font-size: 2rem;
+                padding-left: 2vw;
+            }
+            img{
+                max-width: 10%;
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                padding-right: 1vw;
+            }
+        }
+       
+    }
+
+}
+@media(max-width:345px){
+    .encabezadoIndex{
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: -10px;
+        }
+
+        img{
+            max-width: 35vw;
+            margin-bottom: -10px;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    .bienvenida{
+
+        p{
+            font-size: 0.7rem;
+
+        }
+    }
+
+}

@@ -1,0 +1,186 @@
+// ENCABEZADO
+.encabezadoCol {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(27, 27, 27, 0.600);
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    p {
+        margin-left: 1vw;
+        font-size: 2.5rem;
+    }
+
+    img {
+        max-width: 50%;
+        padding: 1vw;
+    }
+
+}
+
+// PRODUCTOS GENERAL
+.productos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+// ASIDE PRODUCTOS
+.formProductos {
+    background-color: $fondo;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    max-width: 15%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $letra-blanco;
+    padding: 3vh;
+
+    .busqueda {
+        background-color: rgb(54, 54, 54);
+        max-width: 100%;
+        color: $letra-blanco;
+        padding: 0.5vw;
+        margin-bottom: 3vh;
+        border-radius: 12vh;
+        border: 1px solid black;
+    }
+
+    .busqueda::placeholder {
+        color: $letra-blanco;
+    }
+
+    .busqueda:focus {
+        box-shadow: none;
+        border: none;
+    }
+
+    select {
+        background-color: rgb(54, 54, 54);
+        margin-bottom: 3vh;
+        border: 1px solid black;
+
+        option {
+            color: $letra-blanco;
+        }
+    }
+    .check{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+    .precio{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vh;
+        align-items: center;
+    }
+    .inputPrecio{
+        max-width: 100%;
+        background-color: rgb(54, 54, 54);
+    }
+    .botonPrecio{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+// GRILLA DE PRODUCTOS
+.grillaProductos {
+    background-color: rgba(27, 27, 27, 1);
+    max-width: 83%;
+    margin-right: 1vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    width: 100%;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.cromo {
+    box-shadow: 0px 0px 10px black;
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 1vw 2vh 1vw;
+
+
+    h3 {
+        padding-top: 0.5vh;
+    }
+
+    img {
+        max-width: 95%;
+        margin-bottom: 0.5vw;
+    }
+
+    p {
+        width: 95%;
+        min-height: 27vh;
+        margin: auto;
+        margin-bottom: 1vh;
+        font-size: 1.2rem;
+        transition: height 2s;
+    }
+
+    .boton {
+        background-color: $letra-blanco;
+        color: $fondo;
+        width: 7.5vw;
+        border: none;
+        border-radius: 1vh;
+        box-shadow: 1px 1px 10px black;
+        margin-bottom: 1vh;
+
+    }
+
+}
+
+// --------------------------------------------ADAPTACION RESPONSIVE--------------------------------------------
+// ARREGLO PANTALLAS GRANDES 1024
+@media (max-width: 1066px){
+    .formProductos {
+        max-width: 20%;
+    }
+
+    .cromo {
+        width: 21%;
+    
+        h3 {
+            font-size: 1.3rem;
+        }
+        p{
+            margin-top: 0;
+            min-height: 35vh;
+        }
+        .boton {
+            width: 10vw;   
+        }
+    
+    }
+    
+}
+@media (max-width: 930px){
+    .encabezadoCol{
+            
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+
+}

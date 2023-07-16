@@ -1,0 +1,446 @@
+* {
+    font-family: $letra;
+    color: $letra-blanco;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../recursos/header/fondo.jpg');
+
+    // Para que no se levante el footer
+    main {
+        min-height: 80vh;
+    }
+}
+
+// BARRA NAVEGACION
+header {
+    width: 100%;
+
+    // background-image: url('../recursos/header/fondo.jpg');
+    // Cambiar la disposicion entre el icono y el menu
+    .navbar {
+        .container-fluid {
+            justify-content: flex-start;
+        }
+
+    }
+
+    // Texto y ancho de menu fuera del icono
+    .navbar-collapse {
+        max-width: 50%;
+        margin-left: 5vw;
+    }
+
+    // letra del menu
+    .nav-link {
+        color: $letra-blanco;
+        font-size: 1.5rem;
+        margin-left: 3vw;
+    }
+
+    .nav-link:focus {
+        color: $letra-blanco
+    }
+
+    .nav-link:hover {
+        color: $letra-blanco;
+    }
+
+    // MENU DESPLEGADO
+    .dropdown-menu {
+        background-color: $fondo;
+    }
+
+    .dropdown-item {
+        color: $letra-blanco;
+    }
+
+    .menuGry:hover {
+        color: $gryffindor-amarillo;
+        background-color: $gryffindor-rojo;
+    }
+
+    .menuHuf:hover {
+        color: $hufflepuff-marron;
+        background-color: $hufflepuff-amarillo;
+    }
+
+    .menuRav:hover {
+        color: $ravenclaw-plata ;
+        background-color: $ravenclaw-oscuro;
+    }
+
+    .menuSly:hover {
+        color: $slytherin-plata;
+        background-color: $slytherin-esmeralda;
+    }
+
+    .icono {
+        max-width: 5vw;
+    }
+
+}
+
+// FOOTER
+footer {
+    margin-top: 3vh;
+    background-color: $fondo;
+    display: flex;
+    justify-content: space-between;
+
+    .footerizq {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40vw;
+
+        h4,
+        h5 {
+            color: $letra-blanco;
+            margin-left: 3vw;
+            margin-top: 2vh;
+        }
+
+
+    }
+
+    form {
+        display: flex;
+        // flex-direction: column;
+        margin-top: 2vh;
+        width: 40vw;
+
+        span {
+            font-size: 1.5rem;
+            margin-right: 1vw;
+        }
+
+        .email {
+            width: 20vw;
+            max-height: 6vh;
+            color: black;
+            font-size: 0.8rem;
+            font-weight: 500;
+            outline: none;
+            border: none;
+            box-shadow: 0px 0px 10px black;
+            padding-left: 0.5vw;
+        }
+
+        .boton {
+            max-height: 6vh;
+            min-width: 7vw;
+            margin-left: 1vw;
+            color: black;
+            font-weight: 500;
+            padding: 0 0.5vw 0 0.5vw;
+        }
+    }
+
+
+
+    .redes {
+        margin-right: 1vw;
+        width: 10vw;
+
+        h5 {
+            margin-left: 0;
+        }
+
+    }
+
+    .imgRedes {
+        max-width: 3vw;
+        margin-bottom: 1vh;
+    }
+
+    .wizarding {
+        margin-left: 17%;
+        margin-top: 1vh;
+    }
+
+}
+
+// SCROLLBAR
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(27, 27, 27);
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 1px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 3vh;
+}
+
+
+//------------------------------------------------ADAPTACION RESPONSIVE---------------------------------------------
+// ARREGLO DISPOSITIVOS GRANDES
+// 1024
+@media (max-width: 1066px){
+
+    // CASAS
+// PRESENTACION
+.presentacion {
+    max-height: 80vh;
+
+    p {
+        font-size: 2.5rem;
+    }
+}
+// FOOTER
+footer{
+    .footerizq {
+        width: 45vw;
+    
+    }
+
+}
+    
+}
+
+
+// --------------------------------------DISPOSITIVOS MEDIANOS
+//  991px
+
+
+@media (max-width: 991px){
+
+    //MENU ENCABEZADO BOOTSTRAP 
+    header{
+        .navbar{
+
+            .container-fluid {
+                justify-content: space-between;
+            }
+
+            .boton{
+                width: 25%;
+
+            }
+        }
+        .nav-link {
+            margin-left: 0;
+        }
+        .navbar-collapse {
+     margin-left: 0;
+        }
+    }
+
+    // menu hamburguesa
+    // background
+    .bg-dark {
+        --bs-bg-opacity: 0.8;}
+        // rayas horizontales (color rgba en el link)
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+
+    // FOOTER
+footer{
+    .footerizq {
+        width: 45vw;
+
+        h4,h5 {
+            font-size: 1rem;
+            margin-left: 1vw;
+        }
+    
+    
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        width: 40vw;
+
+        span {
+            font-size: 1.2rem;
+            margin-right: 0;
+        }
+
+        .email {
+            width: 30vw;
+            height: 4vh;
+            text-align: center;
+            margin-top: 1vh;
+        }
+
+        .boton {
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+    }
+    .redes{
+        h5{
+            font-size: 1rem;
+        }
+    }
+
+}
+}
+
+@media (max-width:600px){
+    header {
+   
+        .icono {
+            max-width: 10vw;
+        }
+    
+    }
+    // Para no generar scroll horizonal en el submenu
+    .navbar-nav{
+            .container-fluid {
+                overflow: hidden;
+            }
+            // Cada submenu
+        .dropdown-menu.show{
+            width: 25vw;
+            min-width: 0;
+// Link de submenu
+            .dropdown-item{
+                padding: 0;
+                padding-left: 1vw;
+
+            }
+
+        }
+    } 
+    footer{
+        .footerizq {
+            width: 45vw;
+    
+            h4,h5 {
+                font-size: 0.7rem;
+                margin-left: 1vw;
+            }
+        
+        
+        }
+    
+        form {
+            flex-direction: column;
+            align-items: center;
+            width: 40vw;
+    
+            span {
+                font-size: 0.7rem;
+                margin-right: 0;
+            }
+    
+            .email {
+                width: 25vw;
+                height: 4vh;
+                text-align: center;
+                margin-top: 1vh;
+            }
+    
+            .boton {
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                font-size: 0.7rem;
+            }
+        }
+        .redes{
+            h5{
+                font-size: 0.7rem;
+            }
+            img{
+                max-width: 2.5vw;
+            }
+        }
+
+    }
+ 
+}
+//-------------------------------------- DISPOSITIVOS CHICOS
+@media (max-width:425px){
+    header {
+   
+        .icono {
+            max-width: 15vw;
+        }
+        .nav-link{
+            font-size: 1.2rem;
+        }
+    
+    }
+
+    footer{
+        .footerizq {
+            width: 45vw;
+    
+            h4,h5 {
+                font-size: 0.8rem;
+                margin-left: 1vw;
+            }
+        
+        
+        }
+    
+        form {
+            flex-direction: column;
+            align-items: center;
+            width: 35vw;
+    
+            span {
+                font-size: 0.8rem;
+                margin-right: 0;
+            }
+    
+            .email {
+                width: 25vw;
+                height: 4vh;
+                text-align: center;
+                margin-top: 1vh;
+                font-size: 0.8rem;
+            }
+    
+            .boton {
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                font-size: 0.8rem;
+            }
+        }
+        .redes{
+            width: 25vw;
+            text-align: center;
+            .wizarding{
+                margin: 0;
+                filter: none;
+            }
+            h5{
+                font-size: 0.7rem;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+            }
+            img{
+                max-width: 7vw;
+                filter: drop-shadow(0px 0px 3px white);
+            }
+        }
+
+    }
+ 
+}
+@media(max-width:390px){
+    .navbar-nav{
+        .dropdown-menu.show{
+            width: 26vw;
+            .dropdown-item {
+                padding: 0;
+                padding-left: 1vw;
+                font-size: 0.8rem;
+            }
+        }
+
+    } 
+
+    
+    }
+
+
