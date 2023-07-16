@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+* {
   font-family: "EB Garamond", serif;
   color: #faf6e7;
   margin: 0;
@@ -973,34 +978,40 @@ body::-webkit-scrollbar-thumb {
   .encabezadoLibros img {
     margin-right: 1vw; }
 
-.reseñaLibros, .reseñaLibrosResponsive {
+.reseñaLibros,
+.reseñaLibrosResponsive {
   background-color: #1b1b1b;
   max-width: 98%;
   margin: auto;
   margin-bottom: 2vh;
   display: flex;
   flex-wrap: nowrap; }
-  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
+  .reseñaLibros h2,
+  .reseñaLibrosResponsive h2 {
     font-size: 3rem;
     text-align: center; }
-  .reseñaLibros p, .reseñaLibrosResponsive p {
+  .reseñaLibros p,
+  .reseñaLibrosResponsive p {
     font-size: 1.5rem;
     padding-left: 2vh; }
-  .reseñaLibros img, .reseñaLibrosResponsive img {
+  .reseñaLibros img,
+  .reseñaLibrosResponsive img {
     max-height: 70vh;
     padding: 2vh; }
-  .reseñaLibros input, .reseñaLibrosResponsive input {
+  .reseñaLibros button,
+  .reseñaLibrosResponsive button {
     background-color: #faf6e7;
-    min-width: 10vw;
+    min-width: 12vw;
     max-height: 7vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #1b1b1b;
     margin-left: 50%;
     margin-bottom: 1vh;
     border-radius: 30vh;
     border: none;
     box-shadow: 1px 1px 10px black; }
-  .reseñaLibros input:hover, .reseñaLibrosResponsive input:hover {
+  .reseñaLibros button:hover,
+  .reseñaLibrosResponsive button:hover {
     background-color: #1b1b1b;
     color: #faf6e7;
     box-shadow: 0px 0px 2px #faf6e7; }
@@ -1013,9 +1024,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 3rem; }
   .encabezadoLibros img {
     max-width: 65vh; }
-  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
+  .reseñaLibros h2,
+  .reseñaLibrosResponsive h2 {
     font-size: 2.5rem; }
-  .reseñaLibros img, .reseñaLibrosResponsive img {
+  .reseñaLibros img,
+  .reseñaLibrosResponsive img {
     max-height: 90vh;
     padding: 2vh; } }
 
@@ -1024,13 +1037,16 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.5rem; }
   .encabezadoLibros p {
     font-size: 2rem; }
-  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
+  .reseñaLibros h2,
+  .reseñaLibrosResponsive h2 {
     font-size: 2rem;
     text-align: center; }
-  .reseñaLibros p, .reseñaLibrosResponsive p {
+  .reseñaLibros p,
+  .reseñaLibrosResponsive p {
     font-size: 1rem;
     padding-left: 2vh; }
-  .reseñaLibros img, .reseñaLibrosResponsive img {
+  .reseñaLibros img,
+  .reseñaLibrosResponsive img {
     max-height: 60vh; } }
 
 @media (max-width: 835px) {
@@ -1038,11 +1054,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.5rem; }
   .encabezadoLibros p {
     font-size: 1.7rem; }
-  .reseñaLibros, .reseñaLibrosResponsive {
+  .reseñaLibros,
+  .reseñaLibrosResponsive {
     align-items: center; }
-    .reseñaLibros p, .reseñaLibrosResponsive p {
+    .reseñaLibros p,
+    .reseñaLibrosResponsive p {
       font-size: 1rem; }
-    .reseñaLibros img, .reseñaLibrosResponsive img {
+    .reseñaLibros img,
+    .reseñaLibrosResponsive img {
       max-height: 60vh; } }
 
 @media (max-width: 725px) {
@@ -1050,9 +1069,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 2rem; }
   .encabezadoLibros p {
     font-size: 1.5rem; }
-  .reseñaLibros h2, .reseñaLibrosResponsive h2 {
+  .reseñaLibros h2,
+  .reseñaLibrosResponsive h2 {
     font-size: 1.5rem; }
-  .reseñaLibros input, .reseñaLibrosResponsive input {
+  .reseñaLibros button,
+  .reseñaLibrosResponsive button {
     background-color: #faf6e7;
     font-size: 1rem;
     font-weight: 500;
@@ -1060,7 +1081,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 576px) {
   .encabezadoLibros h1 {
-    font-size: 1.8rem; }
+    display: none; }
   .encabezadoLibros p {
     font-size: 1.5rem;
     margin-bottom: 0; }
@@ -1070,7 +1091,20 @@ body::-webkit-scrollbar-thumb {
     max-width: 45vw;
     max-height: 35vw; }
   .reseñaLibros {
-    display: none; }
+    max-width: 95%;
+    flex-direction: column-reverse; }
+    .reseñaLibros div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .reseñaLibros h2 {
+      padding: 0;
+      font-size: 1.2rem; }
+    .reseñaLibros p {
+      padding: 1vh;
+      text-align: justify; }
+    .reseñaLibros button {
+      margin-left: 0; }
   .reseñaLibrosResponsive {
     display: flex; }
     .reseñaLibrosResponsive div {

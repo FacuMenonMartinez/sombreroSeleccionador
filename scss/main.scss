@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 // VARIABLES
 @import './utilidades/_variables.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 // PAGINAS
 @import './generales';
@@ -9,3 +14,4 @@
 @import './secciones/index';
 @import './secciones/libros';
 @import './secciones/coleccionables';
+
