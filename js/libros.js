@@ -1,8 +1,5 @@
 let contenedorLibros = document.getElementById("contenedorLibros");
 
-let anchoVentana = window.innerWidth;
-
-
 
 fetch("../../js/productos.json")
 .then((response)=> response.json())

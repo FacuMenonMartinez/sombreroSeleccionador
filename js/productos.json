@@ -56,58 +56,81 @@
     "img":"../../recursos/libros/reliquiasMuerte.webp"
     },
     {
+        "producto": "Varita de Harry Potter",
         "id": 8,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 2000,
-        "personaje": "harry potter",
-        "filtro": "principal"
+        "filtro": "varita",
+        "img":"../../recursos/coleccionables/varitaHarry.webp"
     },
     {
+        "producto": "Varita de Saúco",
         "id": 9,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 2000,
-        "personaje": "albus dumbledore",
-        "filtro": "principal"
+        "filtro": "varita",
+        "img":"../../recursos/coleccionables/varitaSauco.webp"
+
+    },{
+        "id": 16,
+        "tipo": "coleccionable",
+        "precio": 2000,
+        "producto": "Giratiempo",
+        "filtro": "otro",
+        "img":"../../recursos/coleccionables/giraTiempo.webp"
+
     },
     {
+        "producto": "Bufanda Gryffindor",
         "id": 10,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 1500,
-        "personaje": "godric gryffindor",
-        "filtro": "otro"
+        "filtro": "ropa",
+        "img":"../../recursos/coleccionables/bufandaGryffindor.webp"
+
     },    {
+        "producto": "Bufanda de Slytherin",
         "id": 11,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 1500,
-        "personaje": "helga hufflepuff",
-        "filtro": "otro"
+        "filtro": "ropa",
+        "img":"../../recursos/coleccionables/bufandaSlytherin.webp"
+
     },
     {
         "id": 12,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 1500,
-        "personaje": "rowena ravenclaw",
-        "filtro": "otro"
+        "producto": "Bufanda de Ravenclaw",
+        "filtro": "ropa",
+        "img":"../../recursos/coleccionables/bufandaRavenclaw.webp"
+
     },
     {
         "id": 13,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 1500,
-        "personaje": "salazar slytherin",
-        "filtro": "otro"
+        "producto": "Bufanda de Hufflepuff",
+        "filtro": "ropa",
+        "img":"../../recursos/coleccionables/bufandaHufflepuff.webp"
+
     },
     {
         "id": 14,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 1200,
-        "personaje": "merlin",
-        "filtro": "otro"
+        "producto": "Agenda de Hogwarts",
+        "filtro": "libreria",
+        "img":"../../recursos/coleccionables/agendaHarryPotter.webp"
+
     },
     {
         "id": 15,
-        "tipo": "cromo",
+        "tipo": "coleccionable",
         "precio": 1200,
-        "personaje": "herpo el loco",
-        "filtro": "otro"
+        "producto": "Cuaderno de casas",
+        "filtro": "libreria",
+        "img":"../../recursos/coleccionables/cuadernoHarryPotter.webp"
+
     }    
 ]
