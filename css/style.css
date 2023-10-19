@@ -1189,49 +1189,51 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   overflow: hidden; }
 
-.formProductos {
-  background-color: #1b1b1b;
-  margin-top: 2vh;
-  margin-left: 1vw;
-  max-width: 15%;
+.contenedorFiltro {
+  background-color: rgba(27, 27, 27, 0.7);
+  width: 90vw;
+  margin: auto; }
+
+.botonMostrarFiltros {
+  display: none; }
+
+.filtroProductos {
   display: flex;
-  flex-direction: column;
-  border-right: 1px solid #faf6e7;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2vh;
+  margin: 2vh auto;
   padding: 3vh; }
-  .formProductos .busqueda {
-    background-color: #363636;
-    max-width: 100%;
-    color: #faf6e7;
-    padding: 0.5vw;
-    margin-bottom: 3vh;
-    border-radius: 12vh;
-    border: 1px solid black; }
-  .formProductos .busqueda::placeholder {
-    color: #faf6e7; }
-  .formProductos .busqueda:focus {
-    box-shadow: none;
+  .filtroProductos select {
+    background-color: #1b1b1b;
+    padding: 1vh;
+    box-shadow: 0px 0px 5px 5px black;
+    outline: none;
     border: none; }
-  .formProductos select {
-    background-color: #363636;
-    margin-bottom: 3vh;
-    border: 1px solid black; }
-    .formProductos select option {
-      color: #faf6e7; }
-  .formProductos .check {
+    .filtroProductos select option {
+      color: #faf6e7;
+      border: none;
+      outline: none; }
+  .filtroProductos .check {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 3vh; }
-  .formProductos .precio {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3vh;
-    align-items: center; }
-  .formProductos .inputPrecio {
-    max-width: 100%;
-    background-color: #363636; }
-  .formProductos .botonPrecio {
-    width: 50%;
-    margin-left: 25%; }
+    width: 100%;
+    justify-content: space-evenly; }
+  .filtroProductos .botonFiltro {
+    width: 15%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #1b1b1b;
+    outline: 1px solid #faf6e7;
+    box-shadow: 0px 0px 5px 5px black;
+    border: none;
+    transition: width 1s; }
+  .filtroProductos .botonFiltro:hover {
+    width: 25%;
+    transition: width 0.5s; }
+  .filtroProductos .botonFiltro:active {
+    background-color: black;
+    outline: 1px solid #1b1b1b; }
 
 .contenedorProductos {
   display: flex;
@@ -1250,30 +1252,69 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   max-width: 30%;
   margin: 2vh auto;
+  padding: 2vh;
   box-shadow: 0px 0px 20px 1px black; }
   .tarjetaProducto h4 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2vh; }
   .tarjetaProducto img {
-    max-width: 80%; }
+    max-width: 80%;
+    margin-bottom: 2vh; }
   .tarjetaProducto p {
     font-size: 1.2rem;
     font-weight: 600; }
-
-@media (max-width: 1066px) {
-  .formProductos {
-    max-width: 20%; }
-  .cromo {
-    width: 21%; }
-    .cromo h3 {
-      font-size: 1.3rem; }
-    .cromo p {
-      margin-top: 0;
-      min-height: 35vh; }
-    .cromo .boton {
-      width: 10vw; } }
 
 @media (max-width: 930px) {
   .encabezadoCol h1 {
     font-size: 2.5rem; }
   .encabezadoCol p {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .filtroProductos .botonFiltro {
+    width: 25%; } }
+
+@media (max-width: 769px) {
+  .tarjetaProducto {
+    max-width: 47%; } }
+
+@media (max-width: 426px) {
+  .filtroProductos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin-top: 2vh;
+    margin: 2vh auto;
+    padding: 3vh;
+    background-color: rgba(27, 27, 27, 0.7); }
+    .filtroProductos select {
+      background-color: #1b1b1b;
+      padding: 1vh;
+      box-shadow: 0px 0px 5px 5px black;
+      outline: none;
+      border: none; }
+      .filtroProductos select option {
+        color: #faf6e7;
+        border: none;
+        outline: none; }
+    .filtroProductos .check {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly; }
+    .filtroProductos .botonFiltro {
+      width: 15%;
+      height: 5vh;
+      border-radius: 10px;
+      background-color: #1b1b1b;
+      outline: 1px solid #faf6e7;
+      box-shadow: 0px 0px 5px 5px black;
+      border: none;
+      transition: width 1s; }
+    .filtroProductos .botonFiltro:hover {
+      width: 25%;
+      transition: width 0.5s; }
+    .filtroProductos .botonFiltro:active {
+      background-color: black;
+      outline: 1px solid #1b1b1b; }
+  .tarjetaProducto {
+    max-width: 90%; } }

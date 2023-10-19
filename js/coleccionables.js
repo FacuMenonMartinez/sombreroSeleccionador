@@ -43,12 +43,20 @@ fetch("../../js/productos.json")
 
 
 // FILTROS
+const contenedorFiltro = document.getElementById("contenedorFiltro");
+const botonMostrarFiltros = document.getElementById("botonMostrarFiltros");
 const filtroProductos = document.getElementById("filtroProductos");
 const checkVarita = document.getElementById("filtroVarita");
 const checkRopa = document.getElementById("filtroRopa");
 const checkLibreria = document.getElementById("filtroLibreria");
 const checkOtro = document.getElementById("filtroOtro");
 const botonLimpiarFiltro = document.getElementById("botonLimpiarFiltro");
+
+botonMostrarFiltros.addEventListener('click',()=>{
+    contenedorFiltro.classList.toggle('mostrarFiltro');
+    contenedorFiltro.classList.toggle('contenedorFiltro');
+
+})
 
 function filtrarProductos(filtro) {
     const productosFiltrados = productosCompletos.filter(item => item.filtro === filtro);
@@ -118,6 +126,8 @@ botonLimpiarFiltro.addEventListener('click', (e) => {
     renderizarProductos(productosCompletos);
 
 })
+
+
 
 
 // ORDEN DE PRODUCTOS
